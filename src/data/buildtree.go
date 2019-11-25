@@ -1,3 +1,4 @@
+// buildtree converts the JSON output from gocloc to a tree structure.
 package main
 
 import (
@@ -9,13 +10,16 @@ import (
 	"strings"
 )
 
-const PathSeperator = "/"
+// PathSeparator is the separator used in the input data structure.
+const PathSeparator = "/"
 
+// SlocStats represents the input data structure.
 type SlocStats struct {
 	Files []FileEntry
 	Total StatsEntry
 }
 
+// FileEntry represents the statistics on a single file (leaf).
 type FileEntry struct {
 	Code    int    `json:"code"`
 	Comment int    `json:"comment"`
@@ -24,6 +28,7 @@ type FileEntry struct {
 	Lang    string `json:"Lang"`
 }
 
+// StatsEntry represents the total statistics.
 type StatsEntry struct {
 	Files   int `json:"files"`
 	Code    int `json:"code"`
@@ -31,6 +36,7 @@ type StatsEntry struct {
 	Blank   int `json:"blank"`
 }
 
+// Node represents a folder or source file in the output tree.
 type Node struct {
 	Name     string           `json:"name"`
 	Code     int              `json:"code"`
@@ -70,10 +76,10 @@ func attach(parent *Node, entry *FileEntry) {
 	parent.Code += entry.Code
 	parent.Comment += entry.Comment
 	parent.Blank += entry.Blank
-	segments := strings.Split(entry.Name, PathSeperator)
+	segments := strings.Split(entry.Name, PathSeparator)
 	for _, segment := range segments[1:2] {
 		if node, ok := parent.Children[segment]; ok {
-			reducedName := strings.Join(segments[1:], PathSeperator)
+			reducedName := strings.Join(segments[1:], PathSeparator)
 			entry.Name = reducedName
 			attach(node, entry)
 		} else {
