@@ -38,11 +38,25 @@ type StatsEntry struct {
 
 // Node represents a folder or source file in the output tree.
 type Node struct {
-	Name     string           `json:"name"`
-	Code     int              `json:"code"`
-	Comment  int              `json:"comment"`
-	Blank    int              `json:"blank"`
-	Children map[string]*Node `json:"children"`
+	Name     string       `json:"name"`
+	Code     int          `json:"code"`
+	Comment  int          `json:"comment"`
+	Blank    int          `json:"blank"`
+	Language string       `json:"language,omitempty"`
+	Children CollapsedMap `json:"children,omitempty"`
+	root     bool
+}
+
+// CollapsedMap is a map that is rendered as an array in JSON.
+type CollapsedMap map[string]*Node
+
+// MarshalJSON marshals a map as an array, i.e. by omitting the key.
+func (c CollapsedMap) MarshalJSON() ([]byte, error) {
+	output := make([]*Node, 0)
+	for _, value := range c {
+		output = append(output, value)
+	}
+	return json.Marshal(output)
 }
 
 func main() {
@@ -61,6 +75,7 @@ func main() {
 		Comment:  0,
 		Blank:    0,
 		Children: make(map[string]*Node, 0),
+		root:     true,
 	}
 	for _, f := range slocStats.Files {
 		attach(&root, &f)
@@ -77,20 +92,29 @@ func attach(parent *Node, entry *FileEntry) {
 	parent.Comment += entry.Comment
 	parent.Blank += entry.Blank
 	segments := strings.Split(entry.Name, PathSeparator)
-	for _, segment := range segments[1:2] {
-		if node, ok := parent.Children[segment]; ok {
-			reducedName := strings.Join(segments[1:], PathSeparator)
-			entry.Name = reducedName
-			attach(node, entry)
-		} else {
-			child := Node{
-				Name:     segment,
-				Code:     entry.Code,
-				Comment:  entry.Comment,
-				Blank:    entry.Blank,
-				Children: make(map[string]*Node, 0),
-			}
-			parent.Children[segment] = &child
+	startSegment := 0
+	if parent.root {
+		startSegment++
+	}
+	segment := segments[startSegment]
+	if node, ok := parent.Children[segment]; ok {
+		reducedName := strings.Join(segments[startSegment+1:], PathSeparator)
+		entry.Name = reducedName
+		attach(node, entry)
+	} else {
+		lang := ""
+		if len(segments) == 1 {
+			// leaf
+			lang = entry.Lang
 		}
+		child := Node{
+			Name:     segment,
+			Code:     entry.Code,
+			Comment:  entry.Comment,
+			Blank:    entry.Blank,
+			Language: lang,
+			Children: make(map[string]*Node, 0),
+		}
+		parent.Children[segment] = &child
 	}
 }
