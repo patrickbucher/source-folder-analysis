@@ -64,9 +64,6 @@ func main() {
 		log.Fatalf("marshal tree: %v", err)
 	}
 	fmt.Println(string(buf))
-	/*
-		err = ioutil.WriteFile(TargetFile, buf, 0644)
-	*/
 }
 
 func attach(parent *Node, entry *FileEntry) {
