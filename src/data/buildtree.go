@@ -70,7 +70,7 @@ func main() {
 		log.Fatalf("unmarshal source content: %v", err)
 	}
 	root := Node{
-		Name:     "/",
+		Name:     "",
 		Code:     0,
 		Comment:  0,
 		Blank:    0,
