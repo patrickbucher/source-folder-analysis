@@ -8,6 +8,12 @@
  * Date: sept 1st 2017
  **/
 
+"use strict";
+
+const domain = 'https://raw.githubusercontent.com';
+const resource = 'patrickbucher/source-folder-analysis/master/src/data/sourcetree.json';
+const dataSource = `${domain}/${resource}`;
+
 
 var el_id = 'chart';
 var obj = document.getElementById(el_id);
@@ -17,6 +23,7 @@ var margin = { top: 30, right: 0, bottom: 20, left: 0 },
     height = 600 - margin.top - margin.bottom,
     formatNumber = d3.format(","),
     transitioning;
+
 // sets x and y scale to determine size of visible boxes
 var x = d3.scaleLinear()
     .domain([0, width])
@@ -36,6 +43,7 @@ var svg = d3.select('#' + el_id).append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .style("shape-rendering", "crispEdges");
+
 var grandparent = svg.append("g")
     .attr("class", "grandparent");
 grandparent.append("rect")
@@ -47,18 +55,26 @@ grandparent.append("text")
     .attr("x", 6)
     .attr("y", 6 - margin.top)
     .attr("dy", ".75em");
-d3.json("../../json/d3_example_data.json", function (data) {
+
+d3.json(dataSource).then( function (data) {
     var root = d3.hierarchy(data);
-    console.log(root);
+
+    // Init treemap with root item.
     treemap(root
         .sum(function (d) {
-            return d.value;
+            // Get only values from the files.
+            if(d.children == undefined)
+            {
+                return d.code;
+            }
         })
         .sort(function (a, b) {
-            return b.height - a.height || b.value - a.value
+            return b.height - a.height || b.code - a.code
         })
     );
     display(root);
+
+
     function display(d) {
         // write text into grandparent
         // and activate click's handler
@@ -67,6 +83,7 @@ d3.json("../../json/d3_example_data.json", function (data) {
             .on("click", transition)
             .select("text")
             .text(name(d));
+
         // grandparent color
         grandparent
             .datum(d.parent)
@@ -102,7 +119,7 @@ d3.json("../../json/d3_example_data.json", function (data) {
             .text(function (d) {
                 return d.data.name;
             });
-        /* Adding a foreign object instead of a text object, allows for text wrapping */
+        // Adding a foreign object instead of a text object, allows for text wrapping.
         g.append("foreignObject")
             .call(rect)
             .attr("class", "foreignobj")
@@ -111,10 +128,16 @@ d3.json("../../json/d3_example_data.json", function (data) {
             .html(function (d) {
                 return '' +
                     '<p class="title"> ' + d.data.name + '</p>' +
-                    '<p>' + formatNumber(d.value) + '</p>'
+                    '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' + 
+                    '<p>code: ' + formatNumber(d.data.code) + '</p>' + 
+                    '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' + 
+                    '<p>comment: ' + formatNumber(d.data.comment) + '</p>'
                     ;
-            })
-            .attr("class", "textdiv"); //textdiv class allows us to style the text easily with CSS
+                })
+                //textdiv class allows us to style the text easily with CSS.
+                .attr("class", "textdiv"); 
+
+        // On Click to a rect.
         function transition(d) {
             if (transitioning || !d) return;
             transitioning = true;
@@ -133,7 +156,6 @@ d3.json("../../json/d3_example_data.json", function (data) {
             // Fade-in entering text.
             g2.selectAll("text").style("fill-opacity", 0);
             g2.selectAll("foreignObject div").style("display", "none");
-            /*added*/
             // Transition to the new view.
             t1.selectAll("text").call(text).style("fill-opacity", 0);
             t2.selectAll("text").call(text).style("fill-opacity", 1);
@@ -156,6 +178,11 @@ d3.json("../../json/d3_example_data.json", function (data) {
         }
         return g;
     }
+
+    /**
+     * Returns text position attributes.
+     * @param text object of json item.
+     */
     function text(text) {
         text.attr("x", function (d) {
             return x(d.x) + 6;
@@ -164,6 +191,11 @@ d3.json("../../json/d3_example_data.json", function (data) {
                 return y(d.y) + 6;
             });
     }
+
+    /**
+     * Returns rect position attributes.
+     * @param text object of json item.
+     */
     function rect(rect) {
         rect
             .attr("x", function (d) {
@@ -182,7 +214,12 @@ d3.json("../../json/d3_example_data.json", function (data) {
                 return '#bbbbbb';
             });
     }
-    function foreign(foreign) { /* added */
+
+    /**
+     * Returns foreign object attributes instead of a text object, allows for text wrapping.
+     * @param foreign 
+     */
+    function foreign(foreign) {
         foreign
             .attr("x", function (d) {
                 return x(d.x0);
@@ -197,12 +234,22 @@ d3.json("../../json/d3_example_data.json", function (data) {
                 return y(d.y1) - y(d.y0);
             });
     }
+
+    /**
+     * Returns pathname for chart header.
+     * @param d current json item. 
+     */
     function name(d) {
         return breadcrumbs(d) +
             (d.parent
-                ? " -  Click to zoom out"
-                : " - Click inside square to zoom in");
+                ? "  -  Click to zoom out"
+                : "  Click inside square to zoom in");
     }
+
+    /**
+     * Returns pathname of json item.
+     * @param d current json item. 
+     */
     function breadcrumbs(d) {
         var res = "";
         var sep = " > ";
