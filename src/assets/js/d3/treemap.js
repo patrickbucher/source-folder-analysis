@@ -91,6 +91,7 @@ d3.json(dataSource).then( function (data) {
             .attr("fill", function () {
                 return '#bbbbbb'
             });
+
         var g1 = svg.insert("g", ".grandparent")
             .datum(d)
             .attr("class", "depth");
@@ -119,6 +120,10 @@ d3.json(dataSource).then( function (data) {
             .text(function (d) {
                 return d.data.name;
             });
+        const generateId  = (d) => {
+            // FIXME: use full path (iterate recursively over parents) instead
+            return `${d.data.name}_${d.data.code}_${d.data.code}_${d.data.blank}_${d.data.comment}`.replace(/\./g, '-');
+        };
         // Adding a foreign object instead of a text object, allows for text wrapping.
         g.append("foreignObject")
             .call(rect)
@@ -126,16 +131,26 @@ d3.json(dataSource).then( function (data) {
             .append("xhtml:div")
             .attr("dy", ".75em")
             .html(function (d) {
-                return '' +
-                    '<p class="title"> ' + d.data.name + '</p>' +
-                    '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' + 
-                    '<p>code: ' + formatNumber(d.data.code) + '</p>' + 
-                    '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' + 
-                    '<p>comment: ' + formatNumber(d.data.comment) + '</p>'
-                    ;
+                const id = generateId(d);
+                return '<p class="title">' + d.data.name + '</p>' +
+                    `<div id="${id}" style="visibility: hidden;">` +
+                        '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' + 
+                        '<p>code: ' + formatNumber(d.data.code) + '</p>' + 
+                        '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' + 
+                        '<p>comment: ' + formatNumber(d.data.comment) + '</p>' +
+                        `<p>language: ${d.data.language}</p>` +
+                    '</div>';
                 })
                 //textdiv class allows us to style the text easily with CSS.
-                .attr("class", "textdiv"); 
+                .attr("class", "textdiv")
+                .on("mouseenter", function(d) {
+                    const selector = '#' + generateId(d);
+                    d3.select(selector).style('visibility', 'visible');
+                })
+                .on("mouseleave", function(d) {
+                    const selector = '#' + generateId(d);
+                    d3.select(selector).style('visibility', 'hidden');
+                });
 
         // On Click to a rect.
         function transition(d) {
