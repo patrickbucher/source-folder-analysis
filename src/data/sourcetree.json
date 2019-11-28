@@ -5,95 +5,22 @@
   "blank": 2795,
   "children": [
     {
-      "name": "d3",
-      "code": 30643,
-      "comment": 801,
-      "blank": 5414,
-      "children": [
-        {
-          "name": "d3.js",
-          "code": 15321,
-          "comment": 400,
-          "blank": 2707,
-          "language": "JavaScript"
-        },
-        {
-          "name": "d3.min.js",
-          "code": 1,
-          "comment": 1,
-          "blank": 0,
-          "language": "JavaScript"
-        }
-      ]
-    },
-    {
       "name": "assets",
-      "code": 1017,
-      "comment": 570,
-      "blank": 89,
+      "code": 819,
+      "comment": 519,
+      "blank": 72,
       "children": [
-        {
-          "name": "css",
-          "code": 284,
-          "comment": 8,
-          "blank": 58,
-          "children": [
-            {
-              "name": "style.css",
-              "code": 106,
-              "comment": 4,
-              "blank": 29,
-              "language": "CSS"
-            },
-            {
-              "name": "chart.css",
-              "code": 72,
-              "comment": 0,
-              "blank": 0,
-              "language": "CSS"
-            }
-          ]
-        },
-        {
-          "name": "json",
-          "code": 0,
-          "comment": 818,
-          "blank": 1,
-          "children": [
-            {
-              "name": "treemap.json",
-              "code": 0,
-              "comment": 107,
-              "blank": 0,
-              "language": "JSON"
-            },
-            {
-              "name": "d3_example_data.json",
-              "code": 0,
-              "comment": 355,
-              "blank": 0,
-              "language": "JSON"
-            },
-            {
-              "name": "raw.json",
-              "code": 0,
-              "comment": 1,
-              "blank": 1,
-              "language": "JSON"
-            }
-          ]
-        },
         {
           "name": "js",
-          "code": 411,
-          "comment": 102,
-          "blank": 38,
+          "code": 213,
+          "comment": 51,
+          "blank": 21,
           "children": [
             {
               "name": "d3",
-              "code": 411,
-              "comment": 102,
-              "blank": 38,
+              "code": 213,
+              "comment": 51,
+              "blank": 21,
               "children": [
                 {
                   "name": "treemap.js",
@@ -115,10 +42,31 @@
         },
         {
           "name": "html",
-          "code": 553,
+          "code": 428,
           "comment": 1,
-          "blank": 24,
+          "blank": 21,
           "children": [
+            {
+              "name": "data.html",
+              "code": 54,
+              "comment": 0,
+              "blank": 4,
+              "language": "HTML"
+            },
+            {
+              "name": "description.html",
+              "code": 54,
+              "comment": 0,
+              "blank": 4,
+              "language": "HTML"
+            },
+            {
+              "name": "refrences.html",
+              "code": 54,
+              "comment": 0,
+              "blank": 4,
+              "language": "HTML"
+            },
             {
               "name": "navigation.html",
               "code": 27,
@@ -146,27 +94,57 @@
               "comment": 0,
               "blank": 4,
               "language": "HTML"
+            }
+          ]
+        },
+        {
+          "name": "css",
+          "code": 178,
+          "comment": 4,
+          "blank": 29,
+          "children": [
+            {
+              "name": "style.css",
+              "code": 106,
+              "comment": 4,
+              "blank": 29,
+              "language": "CSS"
             },
             {
-              "name": "data.html",
-              "code": 54,
+              "name": "chart.css",
+              "code": 72,
               "comment": 0,
-              "blank": 4,
-              "language": "HTML"
+              "blank": 0,
+              "language": "CSS"
+            }
+          ]
+        },
+        {
+          "name": "json",
+          "code": 0,
+          "comment": 463,
+          "blank": 1,
+          "children": [
+            {
+              "name": "d3_example_data.json",
+              "code": 0,
+              "comment": 355,
+              "blank": 0,
+              "language": "JSON"
             },
             {
-              "name": "description.html",
-              "code": 54,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
+              "name": "raw.json",
+              "code": 0,
+              "comment": 1,
+              "blank": 1,
+              "language": "JSON"
             },
             {
-              "name": "refrences.html",
-              "code": 54,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
+              "name": "treemap.json",
+              "code": 0,
+              "comment": 107,
+              "blank": 0,
+              "language": "JSON"
             }
           ]
         }
@@ -181,9 +159,9 @@
     },
     {
       "name": "data",
-      "code": 207,
-      "comment": 8212,
-      "blank": 23,
+      "code": 104,
+      "comment": 8203,
+      "blank": 12,
       "children": [
         {
           "name": "buildtree.go",
@@ -212,6 +190,28 @@
           "comment": 8193,
           "blank": 0,
           "language": "JSON"
+        }
+      ]
+    },
+    {
+      "name": "d3",
+      "code": 15322,
+      "comment": 401,
+      "blank": 2707,
+      "children": [
+        {
+          "name": "d3.js",
+          "code": 15321,
+          "comment": 400,
+          "blank": 2707,
+          "language": "JavaScript"
+        },
+        {
+          "name": "d3.min.js",
+          "code": 1,
+          "comment": 1,
+          "blank": 0,
+          "language": "JavaScript"
         }
       ]
     }

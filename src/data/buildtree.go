@@ -92,15 +92,20 @@ func attach(parent *Node, entry *FileEntry) {
 	pathSegment, pathRemainder := split(entry.Name)
 	node, exists := parent.Children[pathSegment]
 	if !exists {
-		lang := ""
+		var lang string
+		var code, comment, blank int
 		if len(pathRemainder) == 0 {
+			// leaf
 			lang = entry.Lang
+			code = entry.Code
+			comment = entry.Comment
+			blank = entry.Blank
 		}
 		child := Node{
 			Name:     pathSegment,
-			Code:     entry.Code,
-			Comment:  entry.Comment,
-			Blank:    entry.Blank,
+			Code:     code,
+			Comment:  comment,
+			Blank:    blank,
 			Language: lang,
 			Children: make(map[string]*Node, 0),
 		}
