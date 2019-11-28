@@ -1,217 +1,4724 @@
 {
   "name": "",
-  "code": 16397,
-  "comment": 9123,
-  "blank": 2795,
+  "code": 31852,
+  "comment": 89824,
+  "blank": 9229,
   "children": [
     {
-      "name": "assets",
-      "code": 819,
-      "comment": 519,
-      "blank": 72,
+      "name": "github.com",
+      "code": 24899,
+      "comment": 86145,
+      "blank": 7195,
       "children": [
         {
-          "name": "js",
-          "code": 213,
-          "comment": 51,
-          "blank": 21,
+          "name": "patrickbucher",
+          "code": 24462,
+          "comment": 11622,
+          "blank": 6925,
           "children": [
             {
-              "name": "d3",
-              "code": 213,
-              "comment": 51,
-              "blank": 21,
+              "name": "zeit",
+              "code": 204,
+              "comment": 25,
+              "blank": 60,
               "children": [
                 {
-                  "name": "treemap.js",
-                  "code": 198,
-                  "comment": 51,
-                  "blank": 17,
-                  "language": "JavaScript"
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 8,
+                  "blank": 4,
+                  "language": "Markdown"
                 },
                 {
-                  "name": "treemap_example.js",
-                  "code": 15,
+                  "name": "TODO.md",
+                  "code": 0,
+                  "comment": 2,
+                  "blank": 1,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "src",
+                  "code": 204,
                   "comment": 0,
+                  "blank": 50,
+                  "children": [
+                    {
+                      "name": "utils_test.c",
+                      "code": 11,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "C"
+                    },
+                    {
+                      "name": "utils.h",
+                      "code": 7,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "zeit.c",
+                      "code": 67,
+                      "comment": 0,
+                      "blank": 12,
+                      "language": "C"
+                    },
+                    {
+                      "name": "utils.c",
+                      "code": 52,
+                      "comment": 0,
+                      "blank": 11,
+                      "language": "C"
+                    },
+                    {
+                      "name": "duration.c",
+                      "code": 39,
+                      "comment": 0,
+                      "blank": 12,
+                      "language": "C"
+                    },
+                    {
+                      "name": "duration.h",
+                      "code": 16,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "duration_test.c",
+                      "code": 12,
+                      "comment": 0,
+                      "blank": 5,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "Makefile",
+                  "code": 0,
+                  "comment": 15,
+                  "blank": 5,
+                  "language": "Makefile"
+                }
+              ]
+            },
+            {
+              "name": "dasb",
+              "code": 11,
+              "comment": 137,
+              "blank": 51,
+              "children": [
+                {
+                  "name": "linear-regression",
+                  "code": 11,
+                  "comment": 8,
+                  "blank": 9,
+                  "children": [
+                    {
+                      "name": "linreg.py",
+                      "code": 11,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "formula.txt",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 5,
+                      "language": "Plain Text"
+                    }
+                  ]
+                },
+                {
+                  "name": "notes",
+                  "code": 0,
+                  "comment": 129,
+                  "blank": 42,
+                  "children": [
+                    {
+                      "name": "fuzzy-data-analysis.md",
+                      "code": 0,
+                      "comment": 23,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "notes.md",
+                      "code": 0,
+                      "comment": 31,
+                      "blank": 11,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "r.md",
+                      "code": 0,
+                      "comment": 55,
+                      "blank": 24,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "forecasting.md",
+                      "code": 0,
+                      "comment": 20,
+                      "blank": 6,
+                      "language": "Markdown"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "devops",
+              "code": 6,
+              "comment": 67,
+              "blank": 26,
+              "children": [
+                {
+                  "name": "01-virtualbox.md",
+                  "code": 0,
+                  "comment": 7,
+                  "blank": 6,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "02-vagrant.md",
+                  "code": 0,
+                  "comment": 17,
+                  "blank": 12,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "03-libvirt.md",
+                  "code": 0,
+                  "comment": 3,
+                  "blank": 1,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "quick-js",
+                  "code": 0,
+                  "comment": 27,
+                  "blank": 1,
+                  "children": [
+                    {
+                      "name": "playbook.yml",
+                      "code": 0,
+                      "comment": 27,
+                      "blank": 1,
+                      "language": "YAML"
+                    }
+                  ]
+                },
+                {
+                  "name": "playground",
+                  "code": 6,
+                  "comment": 13,
+                  "blank": 6,
+                  "children": [
+                    {
+                      "name": ".vagrant",
+                      "code": 6,
+                      "comment": 2,
+                      "blank": 1,
+                      "children": [
+                        {
+                          "name": "rgloader",
+                          "code": 6,
+                          "comment": 2,
+                          "blank": 1,
+                          "children": [
+                            {
+                              "name": "loader.rb",
+                              "code": 6,
+                              "comment": 2,
+                              "blank": 1,
+                              "language": "Ruby"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "site.yml",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 5,
+                      "language": "YAML"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "docs",
+              "code": 2750,
+              "comment": 3125,
+              "blank": 1237,
+              "children": [
+                {
+                  "name": "raspi",
+                  "code": 0,
+                  "comment": 143,
+                  "blank": 78,
+                  "children": [
+                    {
+                      "name": "opencv.md",
+                      "code": 0,
+                      "comment": 46,
+                      "blank": 34,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "raspi.md",
+                      "code": 0,
+                      "comment": 97,
+                      "blank": 44,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "task-time-warrior.md",
+                  "code": 0,
+                  "comment": 9,
+                  "blank": 7,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "trigonometrie",
+                  "code": 0,
+                  "comment": 74,
+                  "blank": 0,
+                  "children": [
+                    {
+                      "name": "trigonometrie.tex",
+                      "code": 0,
+                      "comment": 74,
+                      "blank": 0,
+                      "language": "TeX"
+                    }
+                  ]
+                },
+                {
+                  "name": "w3m",
+                  "code": 0,
+                  "comment": 31,
+                  "blank": 11,
+                  "children": [
+                    {
+                      "name": "w3m.md",
+                      "code": 0,
+                      "comment": 31,
+                      "blank": 11,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "cna",
+                  "code": 850,
+                  "comment": 506,
+                  "blank": 137,
+                  "children": [
+                    {
+                      "name": "cna_testat-2.html",
+                      "code": 449,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "cna_testat-1.html",
+                      "code": 401,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "cna_testat-1.md",
+                      "code": 0,
+                      "comment": 222,
+                      "blank": 73,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "cna_testat-2.md",
+                      "code": 0,
+                      "comment": 284,
+                      "blank": 64,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 10,
+                  "blank": 3,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "how-to-read-a-book",
+                  "code": 0,
+                  "comment": 213,
+                  "blank": 104,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 5,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "how-to-read-a-book.tex",
+                      "code": 0,
+                      "comment": 202,
+                      "blank": 99,
+                      "language": "TeX"
+                    }
+                  ]
+                },
+                {
+                  "name": "arch-setup",
+                  "code": 0,
+                  "comment": 310,
+                  "blank": 248,
+                  "children": [
+                    {
+                      "name": "arch-setup.md",
+                      "code": 0,
+                      "comment": 310,
+                      "blank": 248,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "bibtex-example",
+                  "code": 0,
+                  "comment": 30,
+                  "blank": 11,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 10,
+                      "blank": 4,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "document.tex",
+                      "code": 0,
+                      "comment": 20,
+                      "blank": 7,
+                      "language": "TeX"
+                    }
+                  ]
+                },
+                {
+                  "name": "emacs",
+                  "code": 0,
+                  "comment": 78,
+                  "blank": 14,
+                  "children": [
+                    {
+                      "name": "emacs.md",
+                      "code": 0,
+                      "comment": 78,
+                      "blank": 14,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "webtec",
+                  "code": 861,
+                  "comment": 740,
+                  "blank": 273,
+                  "children": [
+                    {
+                      "name": "cheat-sheet.html",
+                      "code": 836,
+                      "comment": 27,
+                      "blank": 75,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "cheat-sheet.css",
+                      "code": 24,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "CSS"
+                    },
+                    {
+                      "name": "build.sh",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 0,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "cheat-sheet.md",
+                      "code": 0,
+                      "comment": 712,
+                      "blank": 192,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "shell",
+                  "code": 383,
+                  "comment": 247,
+                  "blank": 63,
+                  "children": [
+                    {
+                      "name": "shell.html",
+                      "code": 354,
+                      "comment": 3,
+                      "blank": 0,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "style.css",
+                      "code": 28,
+                      "comment": 0,
+                      "blank": 5,
+                      "language": "CSS"
+                    },
+                    {
+                      "name": "build.sh",
+                      "code": 1,
+                      "comment": 18,
+                      "blank": 3,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "shell.md",
+                      "code": 0,
+                      "comment": 226,
+                      "blank": 55,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "plab",
+                  "code": 456,
+                  "comment": 270,
+                  "blank": 26,
+                  "children": [
+                    {
+                      "name": "effective-java.html",
+                      "code": 291,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "designprinzipien.html",
+                      "code": 164,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "build.sh",
+                      "code": 1,
+                      "comment": 5,
+                      "blank": 1,
+                      "language": "BASH"
+                    },
+                    {
+                      "name": "designprinzipien.md",
+                      "code": 0,
+                      "comment": 92,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "effective-java.md",
+                      "code": 0,
+                      "comment": 173,
+                      "blank": 24,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "git",
+                  "code": 199,
+                  "comment": 187,
+                  "blank": 145,
+                  "children": [
+                    {
+                      "name": "git.html",
+                      "code": 172,
+                      "comment": 0,
+                      "blank": 5,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "style.css",
+                      "code": 27,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "CSS"
+                    },
+                    {
+                      "name": "build.sh",
+                      "code": 0,
+                      "comment": 16,
+                      "blank": 2,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "git.md",
+                      "code": 0,
+                      "comment": 171,
+                      "blank": 131,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "div",
+                  "code": 1,
+                  "comment": 247,
+                  "blank": 101,
+                  "children": [
+                    {
+                      "name": "password-reencryption.md",
+                      "code": 1,
+                      "comment": 34,
+                      "blank": 16,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "effective-exception-handling.md",
+                      "code": 0,
+                      "comment": 155,
+                      "blank": 47,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "howto-patch-files.md",
+                      "code": 0,
+                      "comment": 9,
+                      "blank": 4,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "howto.md",
+                      "code": 0,
+                      "comment": 7,
+                      "blank": 5,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "hslu-vpn.md",
+                      "code": 0,
+                      "comment": 18,
+                      "blank": 15,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "npm-home.md",
+                      "code": 0,
+                      "comment": 13,
+                      "blank": 10,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "windows10-cleanup.md",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 4,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "devops",
+                  "code": 0,
+                  "comment": 30,
+                  "blank": 16,
+                  "children": [
+                    {
+                      "name": "minishift-prereqs.md",
+                      "code": 0,
+                      "comment": 17,
+                      "blank": 13,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "qemu.md",
+                      "code": 0,
+                      "comment": 13,
+                      "blank": 3,
+                      "language": "Markdown"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "revergo",
+              "code": 1409,
+              "comment": 749,
+              "blank": 288,
+              "children": [
+                {
+                  "name": "board",
+                  "code": 683,
+                  "comment": 45,
+                  "blank": 69,
+                  "children": [
+                    {
+                      "name": "board_test.go",
+                      "code": 345,
+                      "comment": 1,
+                      "blank": 25,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "board.go",
+                      "code": 203,
+                      "comment": 25,
+                      "blank": 17,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "move_test.go",
+                      "code": 61,
+                      "comment": 0,
+                      "blank": 9,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "constants.go",
+                      "code": 44,
+                      "comment": 11,
+                      "blank": 11,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "move.go",
+                      "code": 30,
+                      "comment": 8,
+                      "blank": 7,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "player",
+                  "code": 426,
+                  "comment": 61,
+                  "blank": 58,
+                  "children": [
+                    {
+                      "name": "corner_player.go",
+                      "code": 40,
+                      "comment": 6,
+                      "blank": 6,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "random_player.go",
+                      "code": 30,
+                      "comment": 5,
+                      "blank": 6,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "common.go",
+                      "code": 8,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "player.go",
+                      "code": 7,
+                      "comment": 4,
+                      "blank": 4,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "stdin_player.go",
+                      "code": 108,
+                      "comment": 7,
+                      "blank": 11,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "minimax_player.go",
+                      "code": 84,
+                      "comment": 16,
+                      "blank": 10,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "cornerdefense_player.go",
+                      "code": 65,
+                      "comment": 10,
+                      "blank": 6,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "maxround_player.go",
+                      "code": 45,
+                      "comment": 7,
+                      "blank": 6,
+                      "language": "Go"
+                    },
+                    {
+                      "name": "edge_player.go",
+                      "code": 39,
+                      "comment": 6,
+                      "blank": 7,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "LICENSE.txt",
+                  "code": 0,
+                  "comment": 553,
+                  "blank": 121,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "Makefile",
+                  "code": 0,
+                  "comment": 11,
                   "blank": 4,
-                  "language": "JavaScript"
+                  "language": "Makefile"
+                },
+                {
+                  "name": "tournament",
+                  "code": 148,
+                  "comment": 17,
+                  "blank": 14,
+                  "children": [
+                    {
+                      "name": "tournament.go",
+                      "code": 148,
+                      "comment": 17,
+                      "blank": 14,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "game",
+                  "code": 71,
+                  "comment": 13,
+                  "blank": 5,
+                  "children": [
+                    {
+                      "name": "game.go",
+                      "code": 71,
+                      "comment": 13,
+                      "blank": 5,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "simulation",
+                  "code": 48,
+                  "comment": 0,
+                  "blank": 3,
+                  "children": [
+                    {
+                      "name": "simulation.go",
+                      "code": 48,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "league",
+                  "code": 33,
+                  "comment": 0,
+                  "blank": 2,
+                  "children": [
+                    {
+                      "name": "league.go",
+                      "code": 33,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 49,
+                  "blank": 12,
+                  "language": "Markdown"
+                }
+              ]
+            },
+            {
+              "name": "blogpost",
+              "code": 80,
+              "comment": 139,
+              "blank": 29,
+              "children": [
+                {
+                  "name": "blogpost.html",
+                  "code": 80,
+                  "comment": 3,
+                  "blank": 0,
+                  "language": "HTML"
+                },
+                {
+                  "name": "blogpost.md",
+                  "code": 0,
+                  "comment": 123,
+                  "blank": 29,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "result.txt",
+                  "code": 0,
+                  "comment": 3,
+                  "blank": 0,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "search.txt",
+                  "code": 0,
+                  "comment": 10,
+                  "blank": 0,
+                  "language": "Plain Text"
+                }
+              ]
+            },
+            {
+              "name": "eloquent-javascript",
+              "code": 269,
+              "comment": 326,
+              "blank": 167,
+              "children": [
+                {
+                  "name": "notes",
+                  "code": 0,
+                  "comment": 325,
+                  "blank": 142,
+                  "children": [
+                    {
+                      "name": "01-values-types-operators.md",
+                      "code": 0,
+                      "comment": 36,
+                      "blank": 18,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "02-program-structure.md",
+                      "code": 0,
+                      "comment": 39,
+                      "blank": 22,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "03-functions.md",
+                      "code": 0,
+                      "comment": 45,
+                      "blank": 15,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "04-data-structures.md",
+                      "code": 0,
+                      "comment": 172,
+                      "blank": 73,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "05-higher-order-functions.md",
+                      "code": 0,
+                      "comment": 28,
+                      "blank": 14,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "00-meta.md",
+                      "code": 0,
+                      "comment": 5,
+                      "blank": 0,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "exercises",
+                  "code": 269,
+                  "comment": 1,
+                  "blank": 25,
+                  "children": [
+                    {
+                      "name": "ch02",
+                      "code": 32,
+                      "comment": 0,
+                      "blank": 0,
+                      "children": [
+                        {
+                          "name": "chessboard.js",
+                          "code": 16,
+                          "comment": 0,
+                          "blank": 0,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "fizzbuzz.js",
+                          "code": 11,
+                          "comment": 0,
+                          "blank": 0,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "triangle.js",
+                          "code": 5,
+                          "comment": 0,
+                          "blank": 0,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ch04",
+                      "code": 120,
+                      "comment": 0,
+                      "blank": 10,
+                      "children": [
+                        {
+                          "name": "reverse-array.js",
+                          "code": 18,
+                          "comment": 0,
+                          "blank": 2,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "sum-of-range.js",
+                          "code": 16,
+                          "comment": 0,
+                          "blank": 2,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "deep-equal.js",
+                          "code": 62,
+                          "comment": 0,
+                          "blank": 3,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "array-to-list.js",
+                          "code": 24,
+                          "comment": 0,
+                          "blank": 3,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ch05",
+                      "code": 76,
+                      "comment": 1,
+                      "blank": 10,
+                      "children": [
+                        {
+                          "name": "direction.js",
+                          "code": 31,
+                          "comment": 1,
+                          "blank": 5,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "every.js",
+                          "code": 20,
+                          "comment": 0,
+                          "blank": 3,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "flatten.js",
+                          "code": 18,
+                          "comment": 0,
+                          "blank": 1,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "loop.js",
+                          "code": 7,
+                          "comment": 0,
+                          "blank": 1,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ch03",
+                      "code": 41,
+                      "comment": 0,
+                      "blank": 5,
+                      "children": [
+                        {
+                          "name": "even.js",
+                          "code": 17,
+                          "comment": 0,
+                          "blank": 2,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "min.js",
+                          "code": 6,
+                          "comment": 0,
+                          "blank": 1,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "beancount.js",
+                          "code": 18,
+                          "comment": 0,
+                          "blank": 2,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "jinja-ninja",
+              "code": 25,
+              "comment": 46,
+              "blank": 12,
+              "children": [
+                {
+                  "name": "exercises",
+                  "code": 23,
+                  "comment": 20,
+                  "blank": 5,
+                  "children": [
+                    {
+                      "name": "ninja.py",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "test.py",
+                      "code": 9,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "1-data.yml",
+                      "code": 0,
+                      "comment": 10,
+                      "blank": 0,
+                      "language": "YAML"
+                    },
+                    {
+                      "name": "1-solution.yml",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 0,
+                      "language": "YAML"
+                    },
+                    {
+                      "name": "requirements.txt",
+                      "code": 0,
+                      "comment": 2,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    }
+                  ]
+                },
+                {
+                  "name": "docker-run.sh",
+                  "code": 1,
+                  "comment": 2,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "native-run.sh",
+                  "code": 1,
+                  "comment": 3,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 21,
+                  "blank": 5,
+                  "language": "Markdown"
+                }
+              ]
+            },
+            {
+              "name": "flaskdemoapp",
+              "code": 8,
+              "comment": 4,
+              "blank": 4,
+              "children": [
+                {
+                  "name": "hello.py",
+                  "code": 7,
+                  "comment": 0,
+                  "blank": 3,
+                  "language": "Python"
+                },
+                {
+                  "name": "run.sh",
+                  "code": 1,
+                  "comment": 2,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "requirements.txt",
+                  "code": 0,
+                  "comment": 2,
+                  "blank": 0,
+                  "language": "Plain Text"
+                }
+              ]
+            },
+            {
+              "name": "reversi",
+              "code": 812,
+              "comment": 48,
+              "blank": 202,
+              "children": [
+                {
+                  "name": "src",
+                  "code": 812,
+                  "comment": 11,
+                  "blank": 191,
+                  "children": [
+                    {
+                      "name": "game.py",
+                      "code": 60,
+                      "comment": 0,
+                      "blank": 17,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "random_player.py",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "cornerminimax_player.py",
+                      "code": 43,
+                      "comment": 0,
+                      "blank": 10,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "minimax_player.py",
+                      "code": 33,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "firstmove_player.py",
+                      "code": 9,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "stdin_player_test.py",
+                      "code": 20,
+                      "comment": 0,
+                      "blank": 12,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "edge_player_test.py",
+                      "code": 49,
+                      "comment": 0,
+                      "blank": 15,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "simulation.py",
+                      "code": 34,
+                      "comment": 0,
+                      "blank": 8,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "maxround_player.py",
+                      "code": 29,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "stdin_player.py",
+                      "code": 29,
+                      "comment": 2,
+                      "blank": 8,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "edge_player.py",
+                      "code": 25,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "board_test.py",
+                      "code": 253,
+                      "comment": 9,
+                      "blank": 46,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "board.py",
+                      "code": 130,
+                      "comment": 0,
+                      "blank": 27,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "tournament.py",
+                      "code": 88,
+                      "comment": 0,
+                      "blank": 21,
+                      "language": "Python"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 30,
+                  "blank": 11,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "requirements.txt",
+                  "code": 0,
+                  "comment": 1,
+                  "blank": 0,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "todo.md",
+                  "code": 0,
+                  "comment": 6,
+                  "blank": 0,
+                  "language": "Markdown"
+                }
+              ]
+            },
+            {
+              "name": "source-folder-analysis",
+              "code": 1067,
+              "comment": 799,
+              "blank": 83,
+              "children": [
+                {
+                  "name": "src",
+                  "code": 1067,
+                  "comment": 797,
+                  "blank": 83,
+                  "children": [
+                    {
+                      "name": "assets",
+                      "code": 804,
+                      "comment": 411,
+                      "blank": 67,
+                      "children": [
+                        {
+                          "name": "js",
+                          "code": 198,
+                          "comment": 51,
+                          "blank": 17,
+                          "children": [
+                            {
+                              "name": "d3",
+                              "code": 198,
+                              "comment": 51,
+                              "blank": 17,
+                              "children": [
+                                {
+                                  "name": "treemap.js",
+                                  "code": 198,
+                                  "comment": 51,
+                                  "blank": 17,
+                                  "language": "JavaScript"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "html",
+                          "code": 428,
+                          "comment": 1,
+                          "blank": 21,
+                          "children": [
+                            {
+                              "name": "visualitation.html",
+                              "code": 59,
+                              "comment": 1,
+                              "blank": 2,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "about.html",
+                              "code": 55,
+                              "comment": 0,
+                              "blank": 4,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "data.html",
+                              "code": 54,
+                              "comment": 0,
+                              "blank": 4,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "description.html",
+                              "code": 54,
+                              "comment": 0,
+                              "blank": 4,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "refrences.html",
+                              "code": 54,
+                              "comment": 0,
+                              "blank": 4,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "navigation.html",
+                              "code": 27,
+                              "comment": 0,
+                              "blank": 0,
+                              "language": "HTML"
+                            },
+                            {
+                              "name": "research.html",
+                              "code": 125,
+                              "comment": 0,
+                              "blank": 3,
+                              "language": "HTML"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "css",
+                          "code": 178,
+                          "comment": 4,
+                          "blank": 29,
+                          "children": [
+                            {
+                              "name": "style.css",
+                              "code": 106,
+                              "comment": 4,
+                              "blank": 29,
+                              "language": "CSS"
+                            },
+                            {
+                              "name": "chart.css",
+                              "code": 72,
+                              "comment": 0,
+                              "blank": 0,
+                              "language": "CSS"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "json",
+                          "code": 0,
+                          "comment": 355,
+                          "blank": 0,
+                          "children": [
+                            {
+                              "name": "d3_example_data.json",
+                              "code": 0,
+                              "comment": 355,
+                              "blank": 0,
+                              "language": "JSON"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "index.html",
+                      "code": 152,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "HTML"
+                    },
+                    {
+                      "name": "data",
+                      "code": 111,
+                      "comment": 386,
+                      "blank": 12,
+                      "children": [
+                        {
+                          "name": "buildtree.go",
+                          "code": 110,
+                          "comment": 9,
+                          "blank": 11,
+                          "language": "Go"
+                        },
+                        {
+                          "name": "run.sh",
+                          "code": 1,
+                          "comment": 1,
+                          "blank": 1,
+                          "language": "Bourne Shell"
+                        },
+                        {
+                          "name": "slocstats.json",
+                          "code": 0,
+                          "comment": 157,
+                          "blank": 0,
+                          "language": "JSON"
+                        },
+                        {
+                          "name": "sourcetree.json",
+                          "code": 0,
+                          "comment": 219,
+                          "blank": 0,
+                          "language": "JSON"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 2,
+                  "blank": 0,
+                  "language": "Markdown"
+                }
+              ]
+            },
+            {
+              "name": "prog",
+              "code": 1779,
+              "comment": 2072,
+              "blank": 1371,
+              "children": [
+                {
+                  "name": "vier_gewinnt",
+                  "code": 171,
+                  "comment": 20,
+                  "blank": 21,
+                  "children": [
+                    {
+                      "name": "vier_gewinnt.c",
+                      "code": 171,
+                      "comment": 16,
+                      "blank": 20,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "sorting",
+                  "code": 153,
+                  "comment": 18,
+                  "blank": 35,
+                  "children": [
+                    {
+                      "name": "simple_sort.c",
+                      "code": 47,
+                      "comment": 0,
+                      "blank": 9,
+                      "language": "C"
+                    },
+                    {
+                      "name": "sort_utils.c",
+                      "code": 33,
+                      "comment": 1,
+                      "blank": 8,
+                      "language": "C"
+                    },
+                    {
+                      "name": "simple_sort.h",
+                      "code": 3,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "sort_utils.h",
+                      "code": 3,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 13,
+                      "blank": 6,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "sorting.c",
+                      "code": 67,
+                      "comment": 4,
+                      "blank": 11,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "checkout",
+                  "code": 57,
+                  "comment": 1,
+                  "blank": 13,
+                  "children": [
+                    {
+                      "name": "checkout.c",
+                      "code": 57,
+                      "comment": 1,
+                      "blank": 13,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "touchtype_generator",
+                  "code": 52,
+                  "comment": 4,
+                  "blank": 11,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "generate_number_text.c",
+                      "code": 52,
+                      "comment": 0,
+                      "blank": 10,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "unbloat",
+                  "code": 10,
+                  "comment": 5,
+                  "blank": 2,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "junk.txt",
+                      "code": 0,
+                      "comment": 1,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    },
+                    {
+                      "name": "hello.c",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "utils",
+                  "code": 4,
+                  "comment": 83,
+                  "blank": 10,
+                  "children": [
+                    {
+                      "name": "audioconv",
+                      "code": 1,
+                      "comment": 60,
+                      "blank": 5,
+                      "language": "BASH"
+                    },
+                    {
+                      "name": "md2html",
+                      "code": 1,
+                      "comment": 2,
+                      "blank": 1,
+                      "language": "BASH"
+                    },
+                    {
+                      "name": "md2pdf",
+                      "code": 1,
+                      "comment": 14,
+                      "blank": 3,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "switchkb",
+                      "code": 1,
+                      "comment": 7,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    }
+                  ]
+                },
+                {
+                  "name": "darts_x01",
+                  "code": 153,
+                  "comment": 14,
+                  "blank": 21,
+                  "children": [
+                    {
+                      "name": "darts_x01.c",
+                      "code": 153,
+                      "comment": 14,
+                      "blank": 21,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "unk",
+                  "code": 32,
+                  "comment": 2,
+                  "blank": 5,
+                  "children": [
+                    {
+                      "name": "unk.c",
+                      "code": 32,
+                      "comment": 2,
+                      "blank": 5,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "round",
+                  "code": 15,
+                  "comment": 4,
+                  "blank": 4,
+                  "children": [
+                    {
+                      "name": "round.c",
+                      "code": 15,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "bufio",
+                  "code": 14,
+                  "comment": 8,
+                  "blank": 7,
+                  "children": [
+                    {
+                      "name": "main.c",
+                      "code": 7,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C"
+                    },
+                    {
+                      "name": "bufio.c",
+                      "code": 5,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C"
+                    },
+                    {
+                      "name": "bufio.h",
+                      "code": 2,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 3,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "threading",
+                  "code": 108,
+                  "comment": 10,
+                  "blank": 21,
+                  "children": [
+                    {
+                      "name": "sum.c",
+                      "code": 108,
+                      "comment": 6,
+                      "blank": 20,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "linum",
+                  "code": 79,
+                  "comment": 17,
+                  "blank": 19,
+                  "children": [
+                    {
+                      "name": "linum.c",
+                      "code": 79,
+                      "comment": 9,
+                      "blank": 16,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 3,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "alnumpargen",
+                  "code": 60,
+                  "comment": 1000,
+                  "blank": 1013,
+                  "children": [
+                    {
+                      "name": "alnumpargen.c",
+                      "code": 60,
+                      "comment": 0,
+                      "blank": 13,
+                      "language": "C"
+                    },
+                    {
+                      "name": "paragraphs.txt",
+                      "code": 0,
+                      "comment": 1000,
+                      "blank": 1000,
+                      "language": "Plain Text"
+                    }
+                  ]
+                },
+                {
+                  "name": "key_value",
+                  "code": 48,
+                  "comment": 0,
+                  "blank": 10,
+                  "children": [
+                    {
+                      "name": "key_value.c",
+                      "code": 48,
+                      "comment": 0,
+                      "blank": 10,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "utftest",
+                  "code": 33,
+                  "comment": 4,
+                  "blank": 4,
+                  "children": [
+                    {
+                      "name": "lineio.c",
+                      "code": 33,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "fib-test",
+                  "code": 61,
+                  "comment": 0,
+                  "blank": 8,
+                  "children": [
+                    {
+                      "name": "fib.rs",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "Rust"
+                    },
+                    {
+                      "name": "fib.pl",
+                      "code": 9,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "Perl"
+                    },
+                    {
+                      "name": "fib.js",
+                      "code": 8,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "JavaScript"
+                    },
+                    {
+                      "name": "fib.py",
+                      "code": 6,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "fib.c",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C"
+                    },
+                    {
+                      "name": "fib.cpp",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C++"
+                    }
+                  ]
+                },
+                {
+                  "name": "gol",
+                  "code": 117,
+                  "comment": 22,
+                  "blank": 16,
+                  "children": [
+                    {
+                      "name": "gol.c",
+                      "code": 117,
+                      "comment": 16,
+                      "blank": 14,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 6,
+                      "blank": 2,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "monty_hall",
+                  "code": 98,
+                  "comment": 11,
+                  "blank": 24,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 6,
+                      "blank": 2,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "monty_hall.c",
+                      "code": 98,
+                      "comment": 5,
+                      "blank": 22,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "smart_quotes",
+                  "code": 202,
+                  "comment": 22,
+                  "blank": 29,
+                  "children": [
+                    {
+                      "name": "c",
+                      "code": 93,
+                      "comment": 5,
+                      "blank": 11,
+                      "children": [
+                        {
+                          "name": "smart_quotes.c",
+                          "code": 93,
+                          "comment": 5,
+                          "blank": 11,
+                          "language": "C"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "js",
+                      "code": 109,
+                      "comment": 8,
+                      "blank": 18,
+                      "children": [
+                        {
+                          "name": "smart-quotes.js",
+                          "code": 75,
+                          "comment": 7,
+                          "blank": 18,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "smart-quotes.html",
+                          "code": 31,
+                          "comment": 0,
+                          "blank": 0,
+                          "language": "HTML"
+                        },
+                        {
+                          "name": "jquery.js",
+                          "code": 3,
+                          "comment": 1,
+                          "blank": 0,
+                          "language": "JavaScript"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "sed",
+                      "code": 0,
+                      "comment": 9,
+                      "blank": 0,
+                      "children": [
+                        {
+                          "name": "smart_quotes.sed",
+                          "code": 0,
+                          "comment": 9,
+                          "blank": 0,
+                          "language": "sed"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "pymath",
+                  "code": 174,
+                  "comment": 6,
+                  "blank": 55,
+                  "children": [
+                    {
+                      "name": "factor.py",
+                      "code": 19,
+                      "comment": 1,
+                      "blank": 6,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "fib.py",
+                      "code": 12,
+                      "comment": 1,
+                      "blank": 3,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "factor_test.py",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 5,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "mathfuncs.py",
+                      "code": 47,
+                      "comment": 3,
+                      "blank": 8,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "prime.py",
+                      "code": 25,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "mathfuncs_test.py",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "prime_test.py",
+                      "code": 13,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "fib_test.py",
+                      "code": 20,
+                      "comment": 1,
+                      "blank": 11,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "gcd_euclid.py",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "Python"
+                    }
+                  ]
+                },
+                {
+                  "name": "openrussianrip",
+                  "code": 45,
+                  "comment": 800,
+                  "blank": 8,
+                  "children": [
+                    {
+                      "name": "top-100-verbs.txt",
+                      "code": 0,
+                      "comment": 100,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    },
+                    {
+                      "name": "top-500-all.txt",
+                      "code": 0,
+                      "comment": 500,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    },
+                    {
+                      "name": "openrussianrip.py",
+                      "code": 45,
+                      "comment": 0,
+                      "blank": 8,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "top-100-adjectives.txt",
+                      "code": 0,
+                      "comment": 100,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    },
+                    {
+                      "name": "top-100-nouns.txt",
+                      "code": 0,
+                      "comment": 100,
+                      "blank": 0,
+                      "language": "Plain Text"
+                    }
+                  ]
+                },
+                {
+                  "name": "stat",
+                  "code": 80,
+                  "comment": 21,
+                  "blank": 33,
+                  "children": [
+                    {
+                      "name": "stat.h",
+                      "code": 3,
+                      "comment": 5,
+                      "blank": 2,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 15,
+                      "blank": 7,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "stat.c",
+                      "code": 38,
+                      "comment": 1,
+                      "blank": 12,
+                      "language": "C"
+                    },
+                    {
+                      "name": "sd.c",
+                      "code": 20,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "C"
+                    },
+                    {
+                      "name": "mean.c",
+                      "code": 19,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "C"
+                    }
+                  ]
+                },
+                {
+                  "name": "charcode",
+                  "code": 13,
+                  "comment": 0,
+                  "blank": 2,
+                  "children": [
+                    {
+                      "name": "charcode.c",
+                      "code": 13,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "davi",
+              "code": 15383,
+              "comment": 770,
+              "blank": 2797,
+              "children": [
+                {
+                  "name": "project",
+                  "code": 15350,
+                  "comment": 696,
+                  "blank": 2770,
+                  "children": [
+                    {
+                      "name": "src",
+                      "code": 15350,
+                      "comment": 509,
+                      "blank": 2712,
+                      "children": [
+                        {
+                          "name": "d3",
+                          "code": 15322,
+                          "comment": 401,
+                          "blank": 2707,
+                          "children": [
+                            {
+                              "name": "d3.js",
+                              "code": 15321,
+                              "comment": 400,
+                              "blank": 2707,
+                              "language": "JavaScript"
+                            },
+                            {
+                              "name": "d3.min.js",
+                              "code": 1,
+                              "comment": 1,
+                              "blank": 0,
+                              "language": "JavaScript"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "treemap.js",
+                          "code": 15,
+                          "comment": 0,
+                          "blank": 4,
+                          "language": "JavaScript"
+                        },
+                        {
+                          "name": "index.html",
+                          "code": 13,
+                          "comment": 0,
+                          "blank": 0,
+                          "language": "HTML"
+                        },
+                        {
+                          "name": "raw.json",
+                          "code": 0,
+                          "comment": 1,
+                          "blank": 1,
+                          "language": "JSON"
+                        },
+                        {
+                          "name": "treemap.json",
+                          "code": 0,
+                          "comment": 107,
+                          "blank": 0,
+                          "language": "JSON"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 4,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "Project.md",
+                      "code": 0,
+                      "comment": 114,
+                      "blank": 34,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Slides.md",
+                      "code": 0,
+                      "comment": 62,
+                      "blank": 20,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "exercises",
+                  "code": 23,
+                  "comment": 39,
+                  "blank": 16,
+                  "children": [
+                    {
+                      "name": "anscombe",
+                      "code": 23,
+                      "comment": 0,
+                      "blank": 9,
+                      "children": [
+                        {
+                          "name": "anscombe.py",
+                          "code": 23,
+                          "comment": 0,
+                          "blank": 9,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "minard-tufte.md",
+                      "code": 0,
+                      "comment": 39,
+                      "blank": 7,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "svg",
+                  "code": 10,
+                  "comment": 0,
+                  "blank": 0,
+                  "children": [
+                    {
+                      "name": "index.html",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "HTML"
+                    }
+                  ]
+                },
+                {
+                  "name": "notizen.md",
+                  "code": 0,
+                  "comment": 35,
+                  "blank": 11,
+                  "language": "Markdown"
+                }
+              ]
+            },
+            {
+              "name": "conf",
+              "code": 401,
+              "comment": 241,
+              "blank": 75,
+              "children": [
+                {
+                  "name": "scripts",
+                  "code": 8,
+                  "comment": 37,
+                  "blank": 12,
+                  "children": [
+                    {
+                      "name": "ch",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "md2pdf",
+                      "code": 1,
+                      "comment": 13,
+                      "blank": 2,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "projoff",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "projon",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "raspi-ssh",
+                      "code": 1,
+                      "comment": 12,
+                      "blank": 4,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "start-ssh",
+                      "code": 1,
+                      "comment": 2,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "switchkb",
+                      "code": 1,
+                      "comment": 6,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "us",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    }
+                  ]
+                },
+                {
+                  "name": "setup-gui.sh",
+                  "code": 1,
+                  "comment": 30,
+                  "blank": 11,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "LICENSE.txt",
+                  "code": 0,
+                  "comment": 17,
+                  "blank": 4,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "st",
+                  "code": 292,
+                  "comment": 136,
+                  "blank": 34,
+                  "children": [
+                    {
+                      "name": "config.h",
+                      "code": 292,
+                      "comment": 136,
+                      "blank": 34,
+                      "language": "C Header"
+                    }
+                  ]
+                },
+                {
+                  "name": "dwm",
+                  "code": 92,
+                  "comment": 19,
+                  "blank": 12,
+                  "children": [
+                    {
+                      "name": "config.h",
+                      "code": 92,
+                      "comment": 19,
+                      "blank": 12,
+                      "language": "C Header"
+                    }
+                  ]
+                },
+                {
+                  "name": "slock",
+                  "code": 8,
+                  "comment": 2,
+                  "blank": 2,
+                  "children": [
+                    {
+                      "name": "config.h",
+                      "code": 8,
+                      "comment": 2,
+                      "blank": 2,
+                      "language": "C Header"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "wipro",
+              "code": 1,
+              "comment": 1625,
+              "blank": 462,
+              "children": [
+                {
+                  "name": "feedback.md",
+                  "code": 0,
+                  "comment": 7,
+                  "blank": 4,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "workshop",
+                  "code": 0,
+                  "comment": 58,
+                  "blank": 14,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 3,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "slides.md",
+                      "code": 0,
+                      "comment": 50,
+                      "blank": 11,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "project",
+                  "code": 1,
+                  "comment": 858,
+                  "blank": 200,
+                  "children": [
+                    {
+                      "name": "journal",
+                      "code": 1,
+                      "comment": 1,
+                      "blank": 1,
+                      "language": "Bourne Shell"
+                    },
+                    {
+                      "name": "Backlog.md",
+                      "code": 0,
+                      "comment": 551,
+                      "blank": 147,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Meilensteinplan.md",
+                      "code": 0,
+                      "comment": 13,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "TODO.md",
+                      "code": 0,
+                      "comment": 17,
+                      "blank": 0,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "journal.awk",
+                      "code": 0,
+                      "comment": 25,
+                      "blank": 4,
+                      "language": "Awk"
+                    },
+                    {
+                      "name": "Arbeitsjournal.md",
+                      "code": 0,
+                      "comment": 107,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 21,
+                      "blank": 9,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "Meilensteinbericht-1.md",
+                      "code": 0,
+                      "comment": 27,
+                      "blank": 21,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Meilensteinbericht-2.md",
+                      "code": 0,
+                      "comment": 31,
+                      "blank": 6,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Projektplan.md",
+                      "code": 0,
+                      "comment": 44,
+                      "blank": 9,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Rahmenplan.md",
+                      "code": 0,
+                      "comment": 21,
+                      "blank": 1,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "Besprechungsnotizen.md",
+                  "code": 0,
+                  "comment": 28,
+                  "blank": 6,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "TODO.md",
+                  "code": 0,
+                  "comment": 17,
+                  "blank": 0,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "deckblatt",
+                  "code": 0,
+                  "comment": 41,
+                  "blank": 3,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 5,
+                      "blank": 2,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "deckblatt.tex",
+                      "code": 0,
+                      "comment": 36,
+                      "blank": 1,
+                      "language": "TeX"
+                    }
+                  ]
+                },
+                {
+                  "name": "doc",
+                  "code": 0,
+                  "comment": 616,
+                  "blank": 235,
+                  "children": [
+                    {
+                      "name": "03-konzepte.tex",
+                      "code": 0,
+                      "comment": 55,
+                      "blank": 23,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "05-realisierung.tex",
+                      "code": 0,
+                      "comment": 27,
+                      "blank": 11,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "xx-example.tex",
+                      "code": 0,
+                      "comment": 39,
+                      "blank": 6,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "02-stand.tex",
+                      "code": 0,
+                      "comment": 54,
+                      "blank": 35,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "08-anhang.tex",
+                      "code": 0,
+                      "comment": 112,
+                      "blank": 36,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 5,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "pics",
+                      "code": 0,
+                      "comment": 13,
+                      "blank": 6,
+                      "children": [
+                        {
+                          "name": "Makefile",
+                          "code": 0,
+                          "comment": 13,
+                          "blank": 6,
+                          "language": "Makefile"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "00-title.tex",
+                      "code": 0,
+                      "comment": 23,
+                      "blank": 5,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "06-evaluation.tex",
+                      "code": 0,
+                      "comment": 58,
+                      "blank": 7,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "07-ausblick.tex",
+                      "code": 0,
+                      "comment": 6,
+                      "blank": 5,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "document.tex",
+                      "code": 0,
+                      "comment": 63,
+                      "blank": 21,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "glossar.tex",
+                      "code": 0,
+                      "comment": 8,
+                      "blank": 1,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "01-problem.tex",
+                      "code": 0,
+                      "comment": 96,
+                      "blank": 42,
+                      "language": "TeX"
+                    },
+                    {
+                      "name": "04-methoden.tex",
+                      "code": 0,
+                      "comment": 51,
+                      "blank": 32,
+                      "language": "TeX"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "dl4g",
+              "code": 0,
+              "comment": 1400,
+              "blank": 0,
+              "children": [
+                {
+                  "name": "machine-learning",
+                  "code": 0,
+                  "comment": 1400,
+                  "blank": 0,
+                  "children": [
+                    {
+                      "name": ".ipynb_checkpoints",
+                      "code": 0,
+                      "comment": 1400,
+                      "blank": 0,
+                      "children": [
+                        {
+                          "name": "trump-prediction-checkpoint.ipynb",
+                          "code": 0,
+                          "comment": 1400,
+                          "blank": 0,
+                          "language": "Jupyter Notebook"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "schieber",
+              "code": 150,
+              "comment": 10,
+              "blank": 22,
+              "children": [
+                {
+                  "name": "cmd",
+                  "code": 16,
+                  "comment": 0,
+                  "blank": 3,
+                  "children": [
+                    {
+                      "name": "schieber.go",
+                      "code": 16,
+                      "comment": 0,
+                      "blank": 3,
+                      "language": "Go"
+                    }
+                  ]
+                },
+                {
+                  "name": "symbols.md",
+                  "code": 0,
+                  "comment": 10,
+                  "blank": 1,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "cards.go",
+                  "code": 134,
+                  "comment": 0,
+                  "blank": 18,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "iot",
+              "code": 107,
+              "comment": 39,
+              "blank": 39,
+              "children": [
+                {
+                  "name": "c-exercises",
+                  "code": 73,
+                  "comment": 21,
+                  "blank": 23,
+                  "children": [
+                    {
+                      "name": "ex2.c",
+                      "code": 59,
+                      "comment": 10,
+                      "blank": 14,
+                      "language": "C"
+                    },
+                    {
+                      "name": "ex1.c",
+                      "code": 14,
+                      "comment": 0,
+                      "blank": 4,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 11,
+                      "blank": 5,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "c-examples",
+                  "code": 34,
+                  "comment": 8,
+                  "blank": 15,
+                  "children": [
+                    {
+                      "name": "calc.c",
+                      "code": 22,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "C"
+                    },
+                    {
+                      "name": "constptr.c",
+                      "code": 12,
+                      "comment": 6,
+                      "blank": 8,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 2,
+                      "blank": 0,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "laptop.md",
+                  "code": 0,
+                  "comment": 2,
+                  "blank": 0,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "notes.md",
+                  "code": 0,
+                  "comment": 8,
+                  "blank": 1,
+                  "language": "Markdown"
                 }
               ]
             }
           ]
         },
         {
-          "name": "html",
-          "code": 428,
-          "comment": 1,
-          "blank": 21,
+          "name": "skiapoden",
+          "code": 437,
+          "comment": 46,
+          "blank": 163,
           "children": [
             {
-              "name": "data.html",
-              "code": 54,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
-            },
-            {
-              "name": "description.html",
-              "code": 54,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
-            },
-            {
-              "name": "refrences.html",
-              "code": 54,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
-            },
-            {
-              "name": "navigation.html",
-              "code": 27,
-              "comment": 0,
-              "blank": 0,
-              "language": "HTML"
-            },
-            {
-              "name": "research.html",
-              "code": 125,
-              "comment": 0,
-              "blank": 3,
-              "language": "HTML"
-            },
-            {
-              "name": "visualitation.html",
-              "code": 59,
-              "comment": 1,
-              "blank": 2,
-              "language": "HTML"
-            },
-            {
-              "name": "about.html",
-              "code": 55,
-              "comment": 0,
-              "blank": 4,
-              "language": "HTML"
+              "name": "kurtoid",
+              "code": 437,
+              "comment": 46,
+              "blank": 163,
+              "children": [
+                {
+                  "name": "deploy.sh",
+                  "code": 1,
+                  "comment": 6,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "run.sh",
+                  "code": 1,
+                  "comment": 1,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 21,
+                  "blank": 15,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "requirements.txt",
+                  "code": 0,
+                  "comment": 3,
+                  "blank": 0,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "app",
+                  "code": 434,
+                  "comment": 14,
+                  "blank": 145,
+                  "children": [
+                    {
+                      "name": "rule_based_trump_test.py",
+                      "code": 45,
+                      "comment": 0,
+                      "blank": 15,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "kurtoid.py",
+                      "code": 40,
+                      "comment": 2,
+                      "blank": 13,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "donat_trump.py",
+                      "code": 24,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "main.py",
+                      "code": 22,
+                      "comment": 0,
+                      "blank": 6,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "kurtutils.py",
+                      "code": 17,
+                      "comment": 1,
+                      "blank": 9,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "carloid.py",
+                      "code": 71,
+                      "comment": 5,
+                      "blank": 28,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "permutoid.py",
+                      "code": 53,
+                      "comment": 2,
+                      "blank": 18,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "rule_based_trump.py",
+                      "code": 50,
+                      "comment": 0,
+                      "blank": 10,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "trumpruloid.py",
+                      "code": 45,
+                      "comment": 2,
+                      "blank": 17,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "simulation.py",
+                      "code": 38,
+                      "comment": 0,
+                      "blank": 11,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "parallel_universe.py",
+                      "code": 29,
+                      "comment": 2,
+                      "blank": 12,
+                      "language": "Python"
+                    }
+                  ]
+                },
+                {
+                  "name": "build.sh",
+                  "code": 1,
+                  "comment": 1,
+                  "blank": 1,
+                  "language": "Bourne Shell"
+                }
+              ]
             }
           ]
         },
         {
-          "name": "css",
-          "code": 178,
-          "comment": 4,
-          "blank": 29,
-          "children": [
-            {
-              "name": "style.css",
-              "code": 106,
-              "comment": 4,
-              "blank": 29,
-              "language": "CSS"
-            },
-            {
-              "name": "chart.css",
-              "code": 72,
-              "comment": 0,
-              "blank": 0,
-              "language": "CSS"
-            }
-          ]
-        },
-        {
-          "name": "json",
+          "name": "blemmyes",
           "code": 0,
-          "comment": 463,
-          "blank": 1,
+          "comment": 71639,
+          "blank": 46,
           "children": [
             {
-              "name": "d3_example_data.json",
+              "name": "project-idea",
               "code": 0,
-              "comment": 355,
-              "blank": 0,
-              "language": "JSON"
+              "comment": 54,
+              "blank": 25,
+              "children": [
+                {
+                  "name": "Makefile",
+                  "code": 0,
+                  "comment": 12,
+                  "blank": 5,
+                  "language": "Makefile"
+                },
+                {
+                  "name": "idea.md",
+                  "code": 0,
+                  "comment": 38,
+                  "blank": 19,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "rawdata",
+                  "code": 0,
+                  "comment": 4,
+                  "blank": 1,
+                  "children": [
+                    {
+                      "name": "sources.md",
+                      "code": 0,
+                      "comment": 4,
+                      "blank": 1,
+                      "language": "Markdown"
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "name": "raw.json",
+              "name": "shinyapp-sw05",
               "code": 0,
-              "comment": 1,
-              "blank": 1,
-              "language": "JSON"
+              "comment": 71560,
+              "blank": 13,
+              "children": [
+                {
+                  "name": "small.json",
+                  "code": 0,
+                  "comment": 28,
+                  "blank": 0,
+                  "language": "JSON"
+                },
+                {
+                  "name": "test.txt",
+                  "code": 0,
+                  "comment": 0,
+                  "blank": 0,
+                  "language": "Plain Text"
+                },
+                {
+                  "name": "Demos",
+                  "code": 0,
+                  "comment": 75,
+                  "blank": 8,
+                  "children": [
+                    {
+                      "name": "shiny_demo_fabian.R",
+                      "code": 0,
+                      "comment": 75,
+                      "blank": 8,
+                      "language": "R"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 6,
+                  "blank": 3,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "dataset.json",
+                  "code": 0,
+                  "comment": 71434,
+                  "blank": 0,
+                  "language": "JSON"
+                },
+                {
+                  "name": "read-data.R",
+                  "code": 0,
+                  "comment": 17,
+                  "blank": 2,
+                  "language": "R"
+                }
+              ]
             },
             {
-              "name": "treemap.json",
+              "name": "suicide-rates",
               "code": 0,
-              "comment": 107,
-              "blank": 0,
-              "language": "JSON"
+              "comment": 25,
+              "blank": 8,
+              "children": [
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 25,
+                  "blank": 8,
+                  "language": "Markdown"
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "index.html",
-      "code": 152,
-      "comment": 0,
-      "blank": 4,
-      "language": "HTML"
-    },
-    {
-      "name": "data",
-      "code": 104,
-      "comment": 8203,
-      "blank": 12,
-      "children": [
-        {
-          "name": "buildtree.go",
-          "code": 103,
-          "comment": 9,
-          "blank": 11,
-          "language": "Go"
-        },
-        {
-          "name": "run.sh",
-          "code": 1,
-          "comment": 1,
-          "blank": 1,
-          "language": "Bourne Shell"
         },
         {
           "name": "slocstats.json",
           "code": 0,
-          "comment": 0,
+          "comment": 2019,
           "blank": 0,
           "language": "JSON"
         },
         {
-          "name": "sourcetree.json",
+          "name": "struggling-at-hslu",
           "code": 0,
-          "comment": 8193,
-          "blank": 0,
-          "language": "JSON"
+          "comment": 819,
+          "blank": 61,
+          "children": [
+            {
+              "name": "observations",
+              "code": 0,
+              "comment": 819,
+              "blank": 61,
+              "children": [
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 10,
+                  "blank": 3,
+                  "language": "Markdown"
+                },
+                {
+                  "name": "div",
+                  "code": 0,
+                  "comment": 52,
+                  "blank": 11,
+                  "children": [
+                    {
+                      "name": "diehl-with-it.md",
+                      "code": 0,
+                      "comment": 5,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "turmbau.md",
+                      "code": 0,
+                      "comment": 2,
+                      "blank": 1,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "warum-studiere-ich.md",
+                      "code": 0,
+                      "comment": 12,
+                      "blank": 7,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "wirtschaftsinformatiker-deutsch.md",
+                      "code": 0,
+                      "comment": 33,
+                      "blank": 2,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "kontaktstudium",
+                  "code": 0,
+                  "comment": 406,
+                  "blank": 44,
+                  "children": [
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 5,
+                      "blank": 1,
+                      "language": "Makefile"
+                    },
+                    {
+                      "name": "kontaktstudium.md",
+                      "code": 0,
+                      "comment": 401,
+                      "blank": 43,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "modulbeschreibung",
+                  "code": 0,
+                  "comment": 351,
+                  "blank": 3,
+                  "children": [
+                    {
+                      "name": "modulbeschreibung.md",
+                      "code": 0,
+                      "comment": 346,
+                      "blank": 2,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 5,
+                      "blank": 1,
+                      "language": "Makefile"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "name": "d3",
-      "code": 15322,
-      "comment": 401,
-      "blank": 2707,
+      "name": "gitlab.enterpriselab.ch",
+      "code": 5473,
+      "comment": 2545,
+      "blank": 1635,
       "children": [
         {
-          "name": "d3.js",
-          "code": 15321,
-          "comment": 400,
-          "blank": 2707,
-          "language": "JavaScript"
+          "name": "iotcourse-h19",
+          "code": 47,
+          "comment": 62,
+          "blank": 31,
+          "children": [
+            {
+              "name": "arduino-examples",
+              "code": 10,
+              "comment": 12,
+              "blank": 6,
+              "children": [
+                {
+                  "name": "blink",
+                  "code": 10,
+                  "comment": 12,
+                  "blank": 6,
+                  "children": [
+                    {
+                      "name": "blink.ino",
+                      "code": 10,
+                      "comment": 12,
+                      "blank": 6,
+                      "language": "Arduino Sketch"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "makefile-examples",
+              "code": 37,
+              "comment": 50,
+              "blank": 25,
+              "children": [
+                {
+                  "name": "example2",
+                  "code": 29,
+                  "comment": 12,
+                  "blank": 12,
+                  "children": [
+                    {
+                      "name": "file1.c",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C"
+                    },
+                    {
+                      "name": "file2.c",
+                      "code": 10,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C"
+                    },
+                    {
+                      "name": "test.c",
+                      "code": 7,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C"
+                    },
+                    {
+                      "name": "file1.h",
+                      "code": 1,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "file2.h",
+                      "code": 1,
+                      "comment": 0,
+                      "blank": 2,
+                      "language": "C Header"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 12,
+                      "blank": 5,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "example1",
+                  "code": 8,
+                  "comment": 7,
+                  "blank": 2,
+                  "children": [
+                    {
+                      "name": "helloworld.c",
+                      "code": 8,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "C"
+                    },
+                    {
+                      "name": "Makefile",
+                      "code": 0,
+                      "comment": 7,
+                      "blank": 2,
+                      "language": "Makefile"
+                    }
+                  ]
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 31,
+                  "blank": 11,
+                  "language": "Markdown"
+                }
+              ]
+            }
+          ]
         },
         {
-          "name": "d3.min.js",
-          "code": 1,
-          "comment": 1,
-          "blank": 0,
-          "language": "JavaScript"
+          "name": "group02",
+          "code": 0,
+          "comment": 62,
+          "blank": 18,
+          "children": [
+            {
+              "name": "Components.md",
+              "code": 0,
+              "comment": 24,
+              "blank": 6,
+              "language": "Markdown"
+            },
+            {
+              "name": "Makefile",
+              "code": 0,
+              "comment": 11,
+              "blank": 5,
+              "language": "Makefile"
+            },
+            {
+              "name": "README.md",
+              "code": 0,
+              "comment": 27,
+              "blank": 7,
+              "language": "Markdown"
+            }
+          ]
+        },
+        {
+          "name": "JassBot",
+          "code": 5402,
+          "comment": 2421,
+          "blank": 1581,
+          "children": [
+            {
+              "name": "jass-kit",
+              "code": 5296,
+              "comment": 2330,
+              "blank": 1532,
+              "children": [
+                {
+                  "name": "test",
+                  "code": 2030,
+                  "comment": 282,
+                  "blank": 467,
+                  "children": [
+                    {
+                      "name": "stat",
+                      "code": 157,
+                      "comment": 8,
+                      "blank": 45,
+                      "children": [
+                        {
+                          "name": "test_trump_stat.py",
+                          "code": 157,
+                          "comment": 8,
+                          "blank": 45,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "tools",
+                      "code": 72,
+                      "comment": 0,
+                      "blank": 28,
+                      "children": [
+                        {
+                          "name": "test_player_filter.py",
+                          "code": 72,
+                          "comment": 0,
+                          "blank": 28,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "io",
+                      "code": 174,
+                      "comment": 11,
+                      "blank": 50,
+                      "children": [
+                        {
+                          "name": "test_round_parser.py",
+                          "code": 53,
+                          "comment": 2,
+                          "blank": 7,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_log_entry_parser.py",
+                          "code": 41,
+                          "comment": 3,
+                          "blank": 12,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_round_log_entry_file_generator.py",
+                          "code": 32,
+                          "comment": 2,
+                          "blank": 10,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_player_round_serializer.py",
+                          "code": 30,
+                          "comment": 3,
+                          "blank": 12,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_log_and_round_parser.py",
+                          "code": 18,
+                          "comment": 1,
+                          "blank": 9,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "arena",
+                      "code": 200,
+                      "comment": 10,
+                      "blank": 64,
+                      "children": [
+                        {
+                          "name": "test_arena_schieber_cheating.py",
+                          "code": 46,
+                          "comment": 4,
+                          "blank": 15,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_arena_hearts_cheating.py",
+                          "code": 44,
+                          "comment": 4,
+                          "blank": 15,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_select_trump.py",
+                          "code": 42,
+                          "comment": 2,
+                          "blank": 13,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_arena_hearts.py",
+                          "code": 24,
+                          "comment": 0,
+                          "blank": 7,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_arena_nr_rounds.py",
+                          "code": 22,
+                          "comment": 0,
+                          "blank": 7,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_arena_random_trump.py",
+                          "code": 22,
+                          "comment": 0,
+                          "blank": 7,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "code": 0,
+                      "comment": 150,
+                      "blank": 0,
+                      "children": [
+                        {
+                          "name": "small_player_stat.json",
+                          "code": 0,
+                          "comment": 122,
+                          "blank": 0,
+                          "language": "JSON"
+                        },
+                        {
+                          "name": "small_cheating_player_log.txt",
+                          "code": 0,
+                          "comment": 14,
+                          "blank": 0,
+                          "language": "Plain Text"
+                        },
+                        {
+                          "name": "small_log.txt",
+                          "code": 0,
+                          "comment": 3,
+                          "blank": 0,
+                          "language": "Plain Text"
+                        },
+                        {
+                          "name": "small_player_log.txt",
+                          "code": 0,
+                          "comment": 11,
+                          "blank": 0,
+                          "language": "Plain Text"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "base",
+                      "code": 1219,
+                      "comment": 93,
+                      "blank": 258,
+                      "children": [
+                        {
+                          "name": "test_game.py",
+                          "code": 60,
+                          "comment": 1,
+                          "blank": 15,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_round_factory.py",
+                          "code": 50,
+                          "comment": 4,
+                          "blank": 16,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_round_schieber.py",
+                          "code": 181,
+                          "comment": 28,
+                          "blank": 42,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_round_hearts.py",
+                          "code": 124,
+                          "comment": 14,
+                          "blank": 33,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_rule_schieber.py",
+                          "code": 95,
+                          "comment": 14,
+                          "blank": 29,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "rule_hearts_test.py",
+                          "code": 33,
+                          "comment": 4,
+                          "blank": 13,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_player_round.py",
+                          "code": 378,
+                          "comment": 17,
+                          "blank": 57,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_player_round_cheating.py",
+                          "code": 228,
+                          "comment": 6,
+                          "blank": 34,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_const.py",
+                          "code": 70,
+                          "comment": 5,
+                          "blank": 19,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "player_service",
+                      "code": 208,
+                      "comment": 10,
+                      "blank": 22,
+                      "children": [
+                        {
+                          "name": "test_request_parser.py",
+                          "code": 187,
+                          "comment": 7,
+                          "blank": 18,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "test_request_generator.py",
+                          "code": 21,
+                          "comment": 3,
+                          "blank": 4,
+                          "language": "Python"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "source",
+                  "code": 2888,
+                  "comment": 2007,
+                  "blank": 955,
+                  "children": [
+                    {
+                      "name": "jass_kit.egg-info",
+                      "code": 0,
+                      "comment": 65,
+                      "blank": 0,
+                      "children": [
+                        {
+                          "name": "SOURCES.txt",
+                          "code": 0,
+                          "comment": 64,
+                          "blank": 0,
+                          "language": "Plain Text"
+                        },
+                        {
+                          "name": "top_level.txt",
+                          "code": 0,
+                          "comment": 1,
+                          "blank": 0,
+                          "language": "Plain Text"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "jass",
+                      "code": 2868,
+                      "comment": 1837,
+                      "blank": 934,
+                      "children": [
+                        {
+                          "name": "arena",
+                          "code": 203,
+                          "comment": 190,
+                          "blank": 81,
+                          "children": [
+                            {
+                              "name": "trump_selection_none_strategy.py",
+                              "code": 4,
+                              "comment": 13,
+                              "blank": 4,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "trump_selection_strategy.py",
+                              "code": 4,
+                              "comment": 13,
+                              "blank": 3,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "__init__.py",
+                              "code": 0,
+                              "comment": 4,
+                              "blank": 0,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "arena.py",
+                              "code": 127,
+                              "comment": 72,
+                              "blank": 43,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "play_game_nr_rounds_strategy.py",
+                              "code": 24,
+                              "comment": 18,
+                              "blank": 8,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "arena_cheating.py",
+                              "code": 12,
+                              "comment": 28,
+                              "blank": 9,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "trump_selection_random_strategy.py",
+                              "code": 9,
+                              "comment": 15,
+                              "blank": 4,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "trump_selection_players_strategy.py",
+                              "code": 20,
+                              "comment": 15,
+                              "blank": 7,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "play_game_strategy.py",
+                              "code": 3,
+                              "comment": 12,
+                              "blank": 3,
+                              "language": "Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "stat",
+                          "code": 179,
+                          "comment": 94,
+                          "blank": 63,
+                          "children": [
+                            {
+                              "name": "valid_cards_stat.py",
+                              "code": 16,
+                              "comment": 22,
+                              "blank": 6,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "trump_stat.py",
+                              "code": 122,
+                              "comment": 37,
+                              "blank": 40,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "jass_stat.py",
+                              "code": 41,
+                              "comment": 35,
+                              "blank": 17,
+                              "language": "Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "player_service",
+                          "code": 191,
+                          "comment": 111,
+                          "blank": 62,
+                          "children": [
+                            {
+                              "name": "player_service_route.py",
+                              "code": 62,
+                              "comment": 43,
+                              "blank": 21,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "request_parser.py",
+                              "code": 53,
+                              "comment": 32,
+                              "blank": 20,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "request_generator.py",
+                              "code": 45,
+                              "comment": 32,
+                              "blank": 15,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_service_app.py",
+                              "code": 31,
+                              "comment": 4,
+                              "blank": 6,
+                              "language": "Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "player",
+                          "code": 93,
+                          "comment": 31,
+                          "blank": 29,
+                          "children": [
+                            {
+                              "name": "stdin_player_schieber.py",
+                              "code": 46,
+                              "comment": 2,
+                              "blank": 8,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "random_player_schieber.py",
+                              "code": 20,
+                              "comment": 1,
+                              "blank": 5,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "random_player_hearts.py",
+                              "code": 14,
+                              "comment": 1,
+                              "blank": 5,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_cheating.py",
+                              "code": 7,
+                              "comment": 8,
+                              "blank": 3,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player.py",
+                              "code": 6,
+                              "comment": 15,
+                              "blank": 8,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "__init__.py",
+                              "code": 0,
+                              "comment": 4,
+                              "blank": 0,
+                              "language": "Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "base",
+                          "code": 1200,
+                          "comment": 935,
+                          "blank": 387,
+                          "children": [
+                            {
+                              "name": "rule_schieber.py",
+                              "code": 111,
+                              "comment": 95,
+                              "blank": 24,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_utils.py",
+                              "code": 20,
+                              "comment": 20,
+                              "blank": 10,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "rule.py",
+                              "code": 11,
+                              "comment": 38,
+                              "blank": 16,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "illegal_argument_error.py",
+                              "code": 2,
+                              "comment": 7,
+                              "blank": 2,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round.py",
+                              "code": 240,
+                              "comment": 183,
+                              "blank": 73,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_hearts.py",
+                              "code": 27,
+                              "comment": 29,
+                              "blank": 12,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "rule_factory.py",
+                              "code": 12,
+                              "comment": 11,
+                              "blank": 4,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_schieber.py",
+                              "code": 57,
+                              "comment": 46,
+                              "blank": 15,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "rule_hearts.py",
+                              "code": 31,
+                              "comment": 45,
+                              "blank": 12,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "rule_utils.py",
+                              "code": 11,
+                              "comment": 17,
+                              "blank": 5,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "__init__.py",
+                              "code": 0,
+                              "comment": 4,
+                              "blank": 0,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round.py",
+                              "code": 107,
+                              "comment": 132,
+                              "blank": 50,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "game.py",
+                              "code": 135,
+                              "comment": 51,
+                              "blank": 45,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_cheating.py",
+                              "code": 131,
+                              "comment": 99,
+                              "blank": 46,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_factory.py",
+                              "code": 35,
+                              "comment": 24,
+                              "blank": 11,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "label_play.py",
+                              "code": 17,
+                              "comment": 14,
+                              "blank": 5,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "label_trump.py",
+                              "code": 5,
+                              "comment": 9,
+                              "blank": 4,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "const.py",
+                              "code": 248,
+                              "comment": 111,
+                              "blank": 53,
+                              "language": "Python"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "io",
+                          "code": 1002,
+                          "comment": 476,
+                          "blank": 312,
+                          "children": [
+                            {
+                              "name": "round_log_entry_serializer.py",
+                              "code": 26,
+                              "comment": 28,
+                              "blank": 8,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "game_serializer.py",
+                              "code": 45,
+                              "comment": 24,
+                              "blank": 12,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_log_generator.py",
+                              "code": 114,
+                              "comment": 21,
+                              "blank": 35,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_log_parser.py",
+                              "code": 88,
+                              "comment": 0,
+                              "blank": 22,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_log_entry_serializer.py",
+                              "code": 56,
+                              "comment": 52,
+                              "blank": 17,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "label_serializer.py",
+                              "code": 53,
+                              "comment": 38,
+                              "blank": 13,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "log_parser_swisslos.py",
+                              "code": 48,
+                              "comment": 26,
+                              "blank": 8,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_log_entry_file_generator.py",
+                              "code": 46,
+                              "comment": 29,
+                              "blank": 13,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "log_entries.py",
+                              "code": 35,
+                              "comment": 23,
+                              "blank": 12,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "__init__.py",
+                              "code": 0,
+                              "comment": 4,
+                              "blank": 0,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_serializer.py",
+                              "code": 223,
+                              "comment": 118,
+                              "blank": 76,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "round_serializer.py",
+                              "code": 65,
+                              "comment": 36,
+                              "blank": 27,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_round_log_filter.py",
+                              "code": 63,
+                              "comment": 10,
+                              "blank": 18,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "log_entry_file_generator.py",
+                              "code": 47,
+                              "comment": 36,
+                              "blank": 17,
+                              "language": "Python"
+                            },
+                            {
+                              "name": "player_id_filter.py",
+                              "code": 93,
+                              "comment": 31,
+                              "blank": 34,
+                              "language": "Python"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "setup.py",
+                      "code": 19,
+                      "comment": 4,
+                      "blank": 2,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "__init__.py",
+                      "code": 1,
+                      "comment": 0,
+                      "blank": 0,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "Overview.md",
+                      "code": 0,
+                      "comment": 85,
+                      "blank": 12,
+                      "language": "Markdown"
+                    },
+                    {
+                      "name": "README.md",
+                      "code": 0,
+                      "comment": 16,
+                      "blank": 7,
+                      "language": "Markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "tools",
+                  "code": 378,
+                  "comment": 41,
+                  "blank": 110,
+                  "children": [
+                    {
+                      "name": "convert_rounds_to_player_rounds.py",
+                      "code": 103,
+                      "comment": 9,
+                      "blank": 18,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "filter_player_rounds.py",
+                      "code": 71,
+                      "comment": 8,
+                      "blank": 25,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "convert_rounds_for_trump_to_csv.py",
+                      "code": 60,
+                      "comment": 16,
+                      "blank": 20,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "filter_player_round_logs_bak.py",
+                      "code": 57,
+                      "comment": 3,
+                      "blank": 25,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "log_2_train_val_test.py",
+                      "code": 57,
+                      "comment": 5,
+                      "blank": 15,
+                      "language": "Python"
+                    },
+                    {
+                      "name": "convert_rounds_to_player_rounds_bak.py",
+                      "code": 30,
+                      "comment": 0,
+                      "blank": 7,
+                      "language": "Python"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "jass-demo",
+              "code": 106,
+              "comment": 91,
+              "blank": 49,
+              "children": [
+                {
+                  "name": "my_jass",
+                  "code": 46,
+                  "comment": 56,
+                  "blank": 26,
+                  "children": [
+                    {
+                      "name": "player",
+                      "code": 46,
+                      "comment": 56,
+                      "blank": 25,
+                      "children": [
+                        {
+                          "name": "my_player_hearts.py",
+                          "code": 27,
+                          "comment": 31,
+                          "blank": 13,
+                          "language": "Python"
+                        },
+                        {
+                          "name": "my_player.py",
+                          "code": 19,
+                          "comment": 25,
+                          "blank": 12,
+                          "language": "Python"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "__init__.py",
+                      "code": 0,
+                      "comment": 0,
+                      "blank": 1,
+                      "language": "Python"
+                    }
+                  ]
+                },
+                {
+                  "name": "arena_play.py",
+                  "code": 25,
+                  "comment": 6,
+                  "blank": 7,
+                  "language": "Python"
+                },
+                {
+                  "name": "arena_play_hearts.py",
+                  "code": 24,
+                  "comment": 7,
+                  "blank": 6,
+                  "language": "Python"
+                },
+                {
+                  "name": "my_player_service.py",
+                  "code": 11,
+                  "comment": 19,
+                  "blank": 8,
+                  "language": "Python"
+                },
+                {
+                  "name": "README.md",
+                  "code": 0,
+                  "comment": 3,
+                  "blank": 2,
+                  "language": "Markdown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "team03",
+          "code": 24,
+          "comment": 0,
+          "blank": 5,
+          "children": [
+            {
+              "name": "exercise02",
+              "code": 16,
+              "comment": 0,
+              "blank": 4,
+              "children": [
+                {
+                  "name": "exercise2.c",
+                  "code": 16,
+                  "comment": 0,
+                  "blank": 4,
+                  "language": "C"
+                }
+              ]
+            },
+            {
+              "name": "exercise01",
+              "code": 8,
+              "comment": 0,
+              "blank": 1,
+              "children": [
+                {
+                  "name": "mph2kmh.c",
+                  "code": 8,
+                  "comment": 0,
+                  "blank": 1,
+                  "language": "C"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gitlab.peax.ch",
+      "code": 1480,
+      "comment": 1134,
+      "blank": 399,
+      "children": [
+        {
+          "name": "px",
+          "code": 1480,
+          "comment": 430,
+          "blank": 308,
+          "children": [
+            {
+              "name": "Makefile",
+              "code": 0,
+              "comment": 27,
+              "blank": 9,
+              "language": "Makefile"
+            },
+            {
+              "name": "cmd",
+              "code": 368,
+              "comment": 5,
+              "blank": 39,
+              "children": [
+                {
+                  "name": "px.go",
+                  "code": 368,
+                  "comment": 5,
+                  "blank": 39,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "requests",
+              "code": 312,
+              "comment": 0,
+              "blank": 29,
+              "children": [
+                {
+                  "name": "requests.go",
+                  "code": 262,
+                  "comment": 0,
+                  "blank": 18,
+                  "language": "Go"
+                },
+                {
+                  "name": "credentials.go",
+                  "code": 50,
+                  "comment": 0,
+                  "blank": 11,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "env",
+              "code": 222,
+              "comment": 0,
+              "blank": 15,
+              "children": [
+                {
+                  "name": "env_test.go",
+                  "code": 165,
+                  "comment": 0,
+                  "blank": 5,
+                  "language": "Go"
+                },
+                {
+                  "name": "env.go",
+                  "code": 57,
+                  "comment": 0,
+                  "blank": 10,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "tokenstore",
+              "code": 299,
+              "comment": 1,
+              "blank": 37,
+              "children": [
+                {
+                  "name": "tokenpair.go",
+                  "code": 129,
+                  "comment": 0,
+                  "blank": 18,
+                  "language": "Go"
+                },
+                {
+                  "name": "tokenstore.go",
+                  "code": 114,
+                  "comment": 1,
+                  "blank": 13,
+                  "language": "Go"
+                },
+                {
+                  "name": "tokenstore_test.go",
+                  "code": 46,
+                  "comment": 0,
+                  "blank": 4,
+                  "language": "Go"
+                },
+                {
+                  "name": "tokenresponse.go",
+                  "code": 10,
+                  "comment": 0,
+                  "blank": 2,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "scripts",
+              "code": 12,
+              "comment": 339,
+              "blank": 55,
+              "children": [
+                {
+                  "name": "ci-px-login-upload-test.sh",
+                  "code": 1,
+                  "comment": 3,
+                  "blank": 1,
+                  "language": "BASH"
+                },
+                {
+                  "name": "standalone-px-get-retry-test.sh",
+                  "code": 1,
+                  "comment": 26,
+                  "blank": 8,
+                  "language": "BASH"
+                },
+                {
+                  "name": "standalone-px-upload-retry-test.sh",
+                  "code": 1,
+                  "comment": 26,
+                  "blank": 8,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-agent-login-logout-test.sh",
+                  "code": 1,
+                  "comment": 42,
+                  "blank": 4,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-get-test.sh",
+                  "code": 1,
+                  "comment": 20,
+                  "blank": 3,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-help.sh",
+                  "code": 1,
+                  "comment": 29,
+                  "blank": 4,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-login-logout-test.sh",
+                  "code": 1,
+                  "comment": 57,
+                  "blank": 7,
+                  "language": "BASH"
+                },
+                {
+                  "name": "standalone.sh",
+                  "code": 1,
+                  "comment": 15,
+                  "blank": 3,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-pipeline.sh",
+                  "code": 1,
+                  "comment": 46,
+                  "blank": 6,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-env-test.sh",
+                  "code": 1,
+                  "comment": 70,
+                  "blank": 9,
+                  "language": "BASH"
+                },
+                {
+                  "name": "ci-px-version-test.sh",
+                  "code": 1,
+                  "comment": 3,
+                  "blank": 1,
+                  "language": "BASH"
+                },
+                {
+                  "name": "envvars.sh",
+                  "code": 1,
+                  "comment": 2,
+                  "blank": 1,
+                  "language": "BASH"
+                }
+              ]
+            },
+            {
+              "name": "help",
+              "code": 172,
+              "comment": 0,
+              "blank": 77,
+              "children": [
+                {
+                  "name": "help.go",
+                  "code": 172,
+                  "comment": 0,
+                  "blank": 77,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "utils",
+              "code": 94,
+              "comment": 1,
+              "blank": 13,
+              "children": [
+                {
+                  "name": "utils.go",
+                  "code": 64,
+                  "comment": 0,
+                  "blank": 7,
+                  "language": "Go"
+                },
+                {
+                  "name": "pwinput.go",
+                  "code": 15,
+                  "comment": 1,
+                  "blank": 4,
+                  "language": "Go"
+                },
+                {
+                  "name": "pwinput_windows.go",
+                  "code": 15,
+                  "comment": 0,
+                  "blank": 2,
+                  "language": "Go"
+                }
+              ]
+            },
+            {
+              "name": "README.md",
+              "code": 1,
+              "comment": 57,
+              "blank": 34,
+              "language": "Markdown"
+            }
+          ]
+        },
+        {
+          "name": "r-shiny-payment-demo",
+          "code": 0,
+          "comment": 704,
+          "blank": 91,
+          "children": [
+            {
+              "name": "openshift",
+              "code": 0,
+              "comment": 44,
+              "blank": 1,
+              "children": [
+                {
+                  "name": "payment-demo.yml",
+                  "code": 0,
+                  "comment": 44,
+                  "blank": 1,
+                  "language": "YAML"
+                }
+              ]
+            },
+            {
+              "name": "payment-report.Rmd",
+              "code": 0,
+              "comment": 235,
+              "blank": 46,
+              "language": "RMarkdown"
+            },
+            {
+              "name": "randomDataGenerator.R",
+              "code": 0,
+              "comment": 85,
+              "blank": 15,
+              "language": "R"
+            },
+            {
+              "name": "server.R",
+              "code": 0,
+              "comment": 169,
+              "blank": 13,
+              "language": "R"
+            },
+            {
+              "name": "ui.R",
+              "code": 0,
+              "comment": 40,
+              "blank": 1,
+              "language": "R"
+            },
+            {
+              "name": "README.md",
+              "code": 0,
+              "comment": 12,
+              "blank": 4,
+              "language": "Markdown"
+            },
+            {
+              "name": "opencrx-scratch.R",
+              "code": 0,
+              "comment": 64,
+              "blank": 5,
+              "language": "R"
+            },
+            {
+              "name": "opencrx.R",
+              "code": 0,
+              "comment": 55,
+              "blank": 6,
+              "language": "R"
+            }
+          ]
         }
       ]
     }
