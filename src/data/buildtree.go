@@ -44,7 +44,6 @@ type Node struct {
 	Blank    int          `json:"blank"`
 	Language string       `json:"language,omitempty"`
 	Children CollapsedMap `json:"children,omitempty"`
-	root     bool
 }
 
 // CollapsedMap is a map that is rendered as an array in JSON.
@@ -75,7 +74,6 @@ func main() {
 		Comment:  0,
 		Blank:    0,
 		Children: make(map[string]*Node, 0),
-		root:     true,
 	}
 	for _, f := range slocStats.Files {
 		attach(&root, &f)
@@ -91,30 +89,35 @@ func attach(parent *Node, entry *FileEntry) {
 	parent.Code += entry.Code
 	parent.Comment += entry.Comment
 	parent.Blank += entry.Blank
-	segments := strings.Split(entry.Name, PathSeparator)
-	startSegment := 0
-	if parent.root {
-		startSegment++
-	}
-	segment := segments[startSegment]
-	if node, ok := parent.Children[segment]; ok {
-		reducedName := strings.Join(segments[startSegment+1:], PathSeparator)
+	pathSegment, pathRemainder := split(entry.Name)
+	if node, ok := parent.Children[pathSegment]; ok {
+		reducedName := strings.Join(pathRemainder, PathSeparator)
 		entry.Name = reducedName
 		attach(node, entry)
 	} else {
 		lang := ""
-		if len(segments) == 1 {
+		if len(pathRemainder) == 0 {
 			// leaf
 			lang = entry.Lang
 		}
 		child := Node{
-			Name:     segment,
+			Name:     pathSegment,
 			Code:     entry.Code,
 			Comment:  entry.Comment,
 			Blank:    entry.Blank,
 			Language: lang,
 			Children: make(map[string]*Node, 0),
 		}
-		parent.Children[segment] = &child
+		parent.Children[pathSegment] = &child
 	}
+}
+
+func split(path string) (string, []string) {
+	var segment string
+	var i int
+	segments := strings.Split(path, PathSeparator)
+	for i = 0; i < len(segments) && segment == ""; i++ {
+		segment = segments[i]
+	}
+	return segment, segments[i:]
 }
