@@ -43,6 +43,9 @@
 	</div>
 	<main>
 		<div id="section">
+			<h4>
+				Project source folders
+			</h4>
 			<p>
 				A source code folder is a hierarchical fle system structure that contains
 			</p>
@@ -91,29 +94,32 @@
 				A repository folder contains other folders. This is an example from the repository px (a command line
 				client written in the Go programming language):
 			</p>
-			<p>
-				Makefile
-			</p>
-			<p>
-				cmd/px.go
-			</p>
-			<p>
-				scripts/ci-pipeline.sh<br>
-				scripts/ci-px-login-logout-test.sh<br>
-				scripts/envvars.sh
-			</p>
-			<p>
-				tokenstore/tokenpair.go<br>
-				tokenstore/tokenresponse.go<br>
-				tokenstore/tokenstore.go<br>
-				tokenstore/tokenstore_test.go
-			</p>
+			<img src="../images/example_go_project.png" alt="Example Go project" style="height:230px;">
 			<p>
 				The folder not only contains code written in the Go programming language, but also shell scripts, a Makefile, and some documentation written in Markdown.
 			</p>
 			<P>
 				Using the gocloc utility, the number of lines of code by programming/markup language can be displayed as follows:
 			</P>
+			<img src="../images/example_gocloc_output_table.png" alt="Example Go project" style="height:200px;">
+			<h4>
+				Project idea
+			</h4>
+			<p>
+				The idea of this project is to visualize this data in order to gain more insight:
+				<ul>
+					<li>
+						How big are those source folders and files in comparison?
+					</li>
+					<li>
+						How much code do I write in which programming language?
+
+					</li>
+					<li>
+						How dense is the code?
+					</li>
+				</ul>
+			</p>
 		</div>
 	</main>
 	<footer>

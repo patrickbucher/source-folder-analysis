@@ -43,7 +43,28 @@
 	</div>
 	<main>
 		<div id="section">
-
+			<h4>
+				gocloc
+			</h4>
+			<p>
+				The gocloc utility comes with some command line ﬂags that are very useful for the problem at hand:
+			</p>
+			<ul>
+				<li>
+					--by-file: report results for every encountered source fle
+				</li>
+				<li>
+					--output-type=json: output the report as a JSON data structure
+				</li>
+			</ul>
+			<p>
+				Piped into jq, a JSON fle called sclocstats.json (short for «source lines of code statistics» for a source folder is created within seconds:
+			</p>
+			<img src="../images/gocloc_cli.png" alt="Example Go project" style="height:25px;">
+			<p>
+				The (shortened) data structure looks as follows (slocstats.json) for example:
+			</p>
+			<img src="../images/example_gocloc_json.png" alt="Example Go project" style="height:600px;">
 		</div>
 	</main>
 	<footer>
