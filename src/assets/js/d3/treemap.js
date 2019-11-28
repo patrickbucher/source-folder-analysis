@@ -252,7 +252,7 @@ d3.json(dataSource).then( function (data) {
      */
     function breadcrumbs(d) {
         var res = "";
-        var sep = " > ";
+        var sep = "\\";
         d.ancestors().reverse().forEach(function (i) {
             res += i.data.name + sep;
         });
