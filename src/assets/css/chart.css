@@ -16,6 +16,9 @@
   .grandparent rect {
     stroke-width: 3px;
   }
+  .stacked rect {
+    stroke-width: 3px;
+  }
   .grandparent:hover rect {
     fill: grey;
   }
