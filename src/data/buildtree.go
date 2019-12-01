@@ -38,12 +38,27 @@ type StatsEntry struct {
 
 // Node represents a folder or source file in the output tree.
 type Node struct {
-	Name     string       `json:"name"`
-	Code     int          `json:"code"`
-	Comment  int          `json:"comment"`
-	Blank    int          `json:"blank"`
-	Language string       `json:"language,omitempty"`
-	Children CollapsedMap `json:"children,omitempty"`
+	Name          string       `json:"name"`
+	Code          int          `json:"code"`
+	Comment       int          `json:"comment"`
+	Blank         int          `json:"blank"`
+	Language      string       `json:"language,omitempty"`
+	Children      CollapsedMap `json:"children,omitempty"`
+	LanguageLines map[string]int
+}
+
+// TopLanguage finds the language key with the highest line value in
+// LanguageLines and returns it.
+func (n *Node) TopLanguage() string {
+	maxLines := 0
+	var topLang string
+	for lang, lines := range n.LanguageLines {
+		if lines > maxLines {
+			maxLines = lines
+			topLang = lang
+		}
+	}
+	return topLang
 }
 
 // CollapsedMap is a map that is rendered as an array in JSON.
@@ -69,11 +84,12 @@ func main() {
 		log.Fatalf("unmarshal source content: %v", err)
 	}
 	root := Node{
-		Name:     "",
-		Code:     0,
-		Comment:  0,
-		Blank:    0,
-		Children: make(map[string]*Node, 0),
+		Name:          "",
+		Code:          0,
+		Comment:       0,
+		Blank:         0,
+		Children:      make(map[string]*Node, 0),
+		LanguageLines: make(map[string]int, 0),
 	}
 	for _, f := range slocStats.Files {
 		attach(&root, &f)
@@ -102,13 +118,21 @@ func attach(parent *Node, entry *FileEntry) {
 			blank = entry.Blank
 		}
 		child := Node{
-			Name:     pathSegment,
-			Code:     code,
-			Comment:  comment,
-			Blank:    blank,
-			Language: lang,
-			Children: make(map[string]*Node, 0),
+			Name:          pathSegment,
+			Code:          code,
+			Comment:       comment,
+			Blank:         blank,
+			Language:      lang,
+			Children:      make(map[string]*Node, 0),
+			LanguageLines: make(map[string]int, 0),
 		}
+		lines := entry.Code + entry.Comment + entry.Blank
+		if _, ok := parent.LanguageLines[entry.Lang]; ok {
+			parent.LanguageLines[entry.Lang] += lines
+		} else {
+			parent.LanguageLines[entry.Lang] = lines
+		}
+		parent.Language = parent.TopLanguage()
 		parent.Children[pathSegment] = &child
 		node = &child
 	}
