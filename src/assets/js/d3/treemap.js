@@ -13,7 +13,7 @@ var el_id = 'chart';
 var obj = document.getElementById(el_id);
 var divWidth = obj.offsetWidth;
 var margin = { top: 30, right: 0, bottom: 20, left: 0 },
-    width = divWidth - 65,
+    width = divWidth - 20,
     height = 600 - margin.top - margin.bottom,
     formatNumber = d3.format(","),
     transitioning;
@@ -35,8 +35,8 @@ var svg = d3.select('#' + el_id).append("svg")
     .style("margin-left", -margin.left + "px")
     .style("margin.right", -margin.right + "px")
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .style("shape-rendering", "crispEdges");
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .style("shape-rendering", "crispEdges");
 
 var grandparent = svg.append("g")
     .attr("class", "grandparent");
@@ -52,11 +52,6 @@ grandparent.append("text")
 
 var stacked = svg.append("g")
     .attr("class", "stacked")
-stacked.append("rect")
-    .attr("x", 6 + width)
-    .attr("y", -margin.top)
-    .attr("width", 30)
-    .attr("height", height + 30)
 
 d3.json(dataSource).then(function (data) {
     var root = d3.hierarchy(data);
@@ -92,36 +87,27 @@ d3.json(dataSource).then(function (data) {
                 return '#bbbbbb'
             });
 
-        /**
-         * Stacked Start
-         */
+        // stacked bar-chart
+        var dSum = d.data.blank + d.data.comment + d.data.code;
+        var stackedData = [d.data.blank, d.data.comment, d.data.code];
+        var stackedColors = ["#e5e4e2", "#005f59", "#000000"];
 
-        var dSum = d.data.code + d.data.comment + d.data.blank;
-        var stackedData = [d.data.code, d.data.code, dSum];
-        var stackedColors = ["#000000", "#005f59", "#e5e4e2"];
-
-        var color = d3.scaleOrdinal()
-            .domain([d3.min(stackedData), d3.max(stackedData)])
-            .range(stackedColors)
-
-            var yScale = d3.scaleLinear()
-            .domain([d3.min(stackedData), d3.max(stackedData)])
-            .range([0, dSum]);
-
+        var yVal = 0;
+        var yStart = -margin.top
         stacked
+            .append("g")
+            .selectAll("rect")
+            .enter()
             .data(stackedData)
-            .enter().append("g")
-                .attr("fill", function(d) { return color(d.key); })
-                .selectAll("rect")
-                    .data(function(d) { return d; })
-                    .enter().append("rect")
-                    .attr("y", function(d) { return yScale(d[1]); })
-                    .attr("height", function(d) { return yScale(d[0]) - yScale(d[1]); })
-                    .attr("width", 20)
-
-        /**
-         * Stacked End
-         */
+                .enter().append("rect")
+                .attr("x", 6 + width -25)
+                .attr("y", function(d, i) {
+                    yVal = yVal + ((height-yStart) / dSum * stackedData[i-1] || 0);
+                    return yStart + yVal;
+                })
+                .attr("width", 25)
+                .attr("height", function(d) { return ((height+margin.top) / dSum * d);})
+                .attr("fill", function(d, i) { return stackedColors[i]; })
 
         var g1 = svg.insert("g", ".grandparent")
             .datum(d)
