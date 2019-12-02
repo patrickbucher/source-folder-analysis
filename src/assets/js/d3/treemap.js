@@ -1,11 +1,5 @@
 /**
  * Interactive, zoomable treemap, using D3 v4
- *
- * A port to D3 v4 of Jacques Jahnichen's Block, using the same budget data
- * see: http://bl.ocks.org/JacquesJahnichen/42afd0cde7cbf72ecb81
- *
- * Author: Guglielmo Celata
- * Date: sept 1st 2017
  **/
 
 "use strict";
@@ -19,7 +13,7 @@ var el_id = 'chart';
 var obj = document.getElementById(el_id);
 var divWidth = obj.offsetWidth;
 var margin = { top: 30, right: 0, bottom: 20, left: 0 },
-    width = divWidth - 25,
+    width = divWidth - 20,
     height = 600 - margin.top - margin.bottom,
     formatNumber = d3.format(","),
     transitioning;
@@ -41,8 +35,8 @@ var svg = d3.select('#' + el_id).append("svg")
     .style("margin-left", -margin.left + "px")
     .style("margin.right", -margin.right + "px")
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .style("shape-rendering", "crispEdges");
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .style("shape-rendering", "crispEdges");
 
 var grandparent = svg.append("g")
     .attr("class", "grandparent");
@@ -56,15 +50,17 @@ grandparent.append("text")
     .attr("y", 6 - margin.top)
     .attr("dy", ".75em");
 
-d3.json(dataSource).then( function (data) {
+var stacked = svg.append("g")
+    .attr("class", "stacked")
+
+d3.json(dataSource).then(function (data) {
     var root = d3.hierarchy(data);
 
     // Init treemap with root item.
     treemap(root
         .sum(function (d) {
             // Get only values from the files.
-            if(d.children == undefined)
-            {
+            if (d.children == undefined) {
                 return d.code;
             }
         })
@@ -86,11 +82,32 @@ d3.json(dataSource).then( function (data) {
 
         // grandparent color
         grandparent
-            .datum(d.parent)
             .select("rect")
             .attr("fill", function () {
                 return '#bbbbbb'
             });
+
+        // stacked bar-chart
+        var dSum = d.data.blank + d.data.comment + d.data.code;
+        var stackedData = [d.data.blank, d.data.comment, d.data.code];
+        var stackedColors = ["#e5e4e2", "#005f59", "#000000"];
+
+        var yVal = 0;
+        var yStart = -margin.top
+        stacked
+            .append("g")
+            .selectAll("rect")
+            .enter()
+            .data(stackedData)
+                .enter().append("rect")
+                .attr("x", 6 + width -25)
+                .attr("y", function(d, i) {
+                    yVal = yVal + ((height-yStart) / dSum * stackedData[i-1] || 0);
+                    return yStart + yVal;
+                })
+                .attr("width", 25)
+                .attr("height", function(d) { return ((height+margin.top) / dSum * d);})
+                .attr("fill", function(d, i) { return stackedColors[i]; })
 
         var g1 = svg.insert("g", ".grandparent")
             .datum(d)
@@ -99,6 +116,7 @@ d3.json(dataSource).then( function (data) {
             .data(d.children)
             .enter().
             append("g");
+
         // add class and click handler to all g's with children
         g.filter(function (d) {
             return d.children;
@@ -120,7 +138,7 @@ d3.json(dataSource).then( function (data) {
             .text(function (d) {
                 return d.data.name;
             });
-        const generateId  = (d) => {
+        const generateId = (d) => {
             // FIXME: use full path (iterate recursively over parents) instead
             return `${d.data.name}_${d.data.code}_${d.data.code}_${d.data.blank}_${d.data.comment}`.replace(/\./g, '-');
         };
@@ -134,23 +152,23 @@ d3.json(dataSource).then( function (data) {
                 const id = generateId(d);
                 return '<p class="title">' + d.data.name + '</p>' +
                     `<div id="${id}" style="visibility: hidden;">` +
-                        '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' + 
-                        '<p>code: ' + formatNumber(d.data.code) + '</p>' + 
-                        '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' + 
-                        '<p>comment: ' + formatNumber(d.data.comment) + '</p>' +
-                        `<p>language: ${d.data.language}</p>` +
+                    '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' +
+                    '<p>code: ' + formatNumber(d.data.code) + '</p>' +
+                    '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' +
+                    '<p>comment: ' + formatNumber(d.data.comment) + '</p>' +
+                    `<p>language: ${d.data.language}</p>` +
                     '</div>';
-                })
-                //textdiv class allows us to style the text easily with CSS.
-                .attr("class", "textdiv")
-                .on("mouseenter", function(d) {
-                    const selector = '#' + generateId(d);
-                    d3.select(selector).style('visibility', 'visible');
-                })
-                .on("mouseleave", function(d) {
-                    const selector = '#' + generateId(d);
-                    d3.select(selector).style('visibility', 'hidden');
-                });
+            })
+            //textdiv class allows us to style the text easily with CSS.
+            .attr("class", "textdiv")
+            .on("mouseenter", function (d) {
+                const selector = '#' + generateId(d);
+                d3.select(selector).style('visibility', 'visible');
+            })
+            .on("mouseleave", function (d) {
+                const selector = '#' + generateId(d);
+                d3.select(selector).style('visibility', 'hidden');
+            });
 
         // On Click to a rect.
         function transition(d) {
