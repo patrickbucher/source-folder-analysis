@@ -44,7 +44,6 @@ grandparent.append("rect")
     .attr("y", -margin.top)
     .attr("width", width)
     .attr("height", margin.top)
-    .attr("fill", '#bbbbbb');
 grandparent.append("text")
     .attr("x", 6)
     .attr("y", 6 - margin.top)
@@ -56,9 +55,17 @@ var stacked = svg.append("g")
 d3.json(dataSource).then(function (data) {
     var root = d3.hierarchy(data);
 
+    var languageColor = new Map();
+
     // Init treemap with root item.
     treemap(root
         .sum(function (d) {
+            // Init random color per language.
+            var randomColor = "#000000".replace(/0/g,function(){
+                return (~~(Math.random()*16)).toString(16);
+            });
+            languageColor.set(d.language, randomColor)
+
             // Get only values from the files.
             if (d.children == undefined) {
                 return d.code;
@@ -69,7 +76,6 @@ d3.json(dataSource).then(function (data) {
         })
     );
     display(root);
-
 
     function display(d) {
         // write text into grandparent
@@ -83,9 +89,7 @@ d3.json(dataSource).then(function (data) {
         // grandparent color
         grandparent
             .select("rect")
-            .attr("fill", function () {
-                return '#bbbbbb'
-            });
+            .attr("fill", '#f1f0f0');
 
         // stacked bar-chart
         var dSum = d.data.blank + d.data.comment + d.data.code;
@@ -123,6 +127,7 @@ d3.json(dataSource).then(function (data) {
         })
             .classed("children", true)
             .on("click", transition);
+
         g.selectAll(".child")
             .data(function (d) {
                 return d.children || [d];
@@ -244,7 +249,7 @@ d3.json(dataSource).then(function (data) {
                 return y(d.y1) - y(d.y0);
             })
             .attr("fill", function (d) {
-                return '#bbbbbb';
+                return languageColor.get(d.data.language);
             });
     }
 
