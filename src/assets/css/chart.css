@@ -60,21 +60,27 @@
       padding: 7px;
       cursor: pointer;
       overflow:none;
-  }
-  .textdiv .title {
+    }
+    .textdiv .title {
       font-size: 102%;
       font-weight: bold;
       margin-top: 8px;
       font-size:11px !important;
-  }
-  .textdiv p {
+    }
+    .textdiv p {
       line-height: 13px;
       margin:0 0 4px !important;
       padding:0px;
       font-size:10px !important;
-  }
-
-  .textdiv div {
+    }
+    
+    .textdiv div {
+      visibility: hidden;
       position: relative;
-      display: inline-block !important;
+      display: inline-block!important;
+      background-color: black;
+      border-radius: 6px;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
   }

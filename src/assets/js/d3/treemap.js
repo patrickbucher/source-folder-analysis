@@ -156,8 +156,7 @@ d3.json(dataSource).then(function (data) {
             .html(function (d) {
                 const id = generateId(d);
                 return '<p class="title">' + d.data.name + '</p>' +
-                    `<div id="${id}" style="visibility: hidden;">` +
-                    '<p>value: ' + formatNumber(d.value) + ' (recursiv)</p>' +
+                    `<div id="${id}">` +
                     '<p>code: ' + formatNumber(d.data.code) + '</p>' +
                     '<p>blank: ' + formatNumber(d.data.blank) + ' </p>' +
                     '<p>comment: ' + formatNumber(d.data.comment) + '</p>' +
