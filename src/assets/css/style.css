@@ -134,6 +134,12 @@ input.submit {
     box-shadow: 0 5px 10px white inset;
 }
 
+div#infopanel {
+    font-size: 10pt;
+    font-weight: bold;
+}
 
-
-
+div#infopanel div {
+    display: inline-block;
+    width: 16%;
+}

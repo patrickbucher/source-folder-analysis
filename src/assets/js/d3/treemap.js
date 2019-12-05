@@ -64,6 +64,21 @@ var stacked = svg.append("g")
     .attr("class", "stacked")
 
 loadColorMap(colorSource).then(function (languageColor) {
+
+    function getColor(data) {
+        const color = languageColor.get(data.language.toLowerCase());
+        if (color == undefined) {
+            console.log(`no color for language "${data.language}" found, fall back to white`)
+            return 'rgba(#ffffff, 1.0)';
+        }
+        const hex2rgba = (hex, alpha = 1) => {
+            const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
+            return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+        };
+        const alpha = data.code / (data.code + data.comment + data.blank);
+        return hex2rgba(color, alpha);
+    }
+
     d3.json(dataSource).then(function (data) {
         var root = d3.hierarchy(data);
 
@@ -177,6 +192,15 @@ loadColorMap(colorSource).then(function (languageColor) {
                 .on("mouseenter", function (d) {
                     const selector = '#' + generateId(d);
                     d3.select(selector).style('visibility', 'visible');
+                    d3.select('#infopanel').html(function() {
+                        const total = d.data.code + d.data.blank + d.data.comment;
+                        return `<div>Name: ${d.data.name}</div>` +
+                            `<div>Lines: ${total}</div>` +
+                            `<div>Code: ${d.data.code}</div>` +
+                            `<div>Comment: ${d.data.comment}</div>` +
+                            `<div>Blank: ${d.data.blank}</div>` +
+                            `<div>Language: ${d.data.language}</div>`;
+                    });
                 })
                 .on("mouseleave", function (d) {
                     const selector = '#' + generateId(d);
@@ -257,12 +281,7 @@ loadColorMap(colorSource).then(function (languageColor) {
                     return y(d.y1) - y(d.y0);
                 })
                 .attr("fill", function (d) {
-                    const color = languageColor.get(d.data.language.toLowerCase());
-                    if (color == undefined) {
-                        console.log(`no color for language "${d.data.language}" found, fall back to white`)
-                        return '#ffffff';
-                    }
-                    return color;
+                    return getColor(d.data);
                 });
         }
 
