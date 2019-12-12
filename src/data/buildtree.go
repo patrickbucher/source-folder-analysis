@@ -38,13 +38,13 @@ type StatsEntry struct {
 
 // Node represents a folder or source file in the output tree.
 type Node struct {
-	Name          string       `json:"name"`
-	Code          int          `json:"code"`
-	Comment       int          `json:"comment"`
-	Blank         int          `json:"blank"`
-	Language      string       `json:"language,omitempty"`
-	Children      CollapsedMap `json:"children,omitempty"`
-	LanguageLines map[string]int
+	Name          string         `json:"name"`
+	Code          int            `json:"code"`
+	Comment       int            `json:"comment"`
+	Blank         int            `json:"blank"`
+	Language      string         `json:"language,omitempty"`
+	Children      CollapsedMap   `json:"children,omitempty"`
+	LanguageLines map[string]int `json:"-"`
 }
 
 // TopLanguage finds the language key with the highest line value in
